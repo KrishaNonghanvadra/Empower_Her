@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Empower_Her_1.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Guest_Master_Page.Master.cs" Inherits="Empower_Her_1.Site1" %>
 
 <!DOCTYPE html>
 

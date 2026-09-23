@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Empower_Her_1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Empower Her</title>
+    <!-- css links -->
+    <link href="CSS/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navbar -->
+        <header>
+            <div class="logo">
+                Empower Her
+            </div>
+
+            <nav>
+                <a href="Home.aspx">Home</a>
+                <a href="Products.aspx">Home</a>
+                <a href="About.aspx">Home</a>
+                <a href="Contact.aspx">Home</a>
+                <a href="Login.aspx">Home</a>
+            </nav>
+        </header>
+
+        <!-- Page Content -->
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+
+        <!-- Footer -->
+
+        <footer1>
+            <p> @ 2026 Empower her</p>
+        </footer1>
+    </form>
+</body>
+</html>

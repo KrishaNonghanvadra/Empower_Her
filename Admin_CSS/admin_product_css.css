@@ -1,0 +1,138 @@
+﻿.product-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.product-title h2 {
+    margin: 0;
+    font-size: 25px;
+    color: #111;
+}
+
+.product-title p {
+    margin: 3px 0 0;
+    font-size: 13px;
+    color: #333;
+}
+
+/* ================= ADD BUTTON ================= */
+
+.add-btn {
+    background-color: #f51d72;
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+    .add-btn:hover {
+        background-color: #d91661;
+    }
+
+/* ================= SEARCH ================= */
+
+.search-box {
+    width: 270px;
+    height: 30px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 11px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    background-color: #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.product-table {
+    width: 100%;
+    display: table !important;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+    font-size: 11px;
+    border: 1px solid #ddd;
+}
+
+    /* Table Header */
+
+    .product-table th {
+        background-color: #ff4f87;
+        color: white;
+        text-align: left;
+        padding: 12px 8px;
+        font-weight: bold;
+        border: 1px solid #ddd;
+    }
+
+    /* Table Data */
+
+    .product-table td {
+        padding: 12px 8px;
+        border: 1px solid #e5e5e5;
+        color: #333;
+        background-color: white;
+    }
+
+    /* Table Row */
+
+    .product-table tr {
+        display: table-row !important;
+    }
+
+        .product-table tr:hover {
+            background-color: #fafafa;
+        }
+
+/* ================= PRODUCT NAME ================= */
+
+.product-name {
+    font-weight: bold;
+    line-height: 12px;
+}
+
+/* ================= STATUS ================= */
+
+.status-active {
+    color: #159447;
+    font-weight: bold;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.view-btn {
+    color: #111;
+}
+
+.delete-btn {
+    color: #f51d72;
+}

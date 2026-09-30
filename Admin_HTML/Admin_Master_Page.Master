@@ -1,19 +1,276 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_Master_Page.master.cs" Inherits="Empower_Her_1.Admin_HTML.Admin_Master_Page" %>
+﻿<%@ Master Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="Admin_Master_Page.master.cs"
+    Inherits="Empower_Her_1.Admin_HTML.Admin_Master_Page" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title></title>
+
+    <title>EmpowerHer</title>
+
+    <!-- Header CSS -->
+    <link href="<%= ResolveUrl("~/Admin_CSS/header_css.css") %>"
+          rel="stylesheet" />
+
+    <!-- Footer CSS -->
+    <link href="<%= ResolveUrl("~/Admin_CSS/footer_css.css") %>"
+          rel="stylesheet" />
+
+    <!-- Sidebar CSS -->
+    <link href="<%= ResolveUrl("~/Admin_CSS/sidebar_css.css") %>"
+          rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- Page-specific CSS can be added here -->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
 </head>
+
 <body>
+
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="main-header">
+
+            <!-- Logo and Website Name -->
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-venus"></i>
+                </div>
+
+                <span class="brand-name">
+                    EmpowerHer
+                </span>
+
+            </div>
+
+
+            <!-- Right Side -->
+
+            <div class="header-right">
+
+                <!-- Notification -->
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+
+                <!-- Admin Profile -->
+
+                <div class="admin-profile">
+
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <span>
+                        Admin
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!--======================SIDEBAR + Page content ==========================-->
+
+        <div class="admin-layout">
+
+            <!-- =====================SIDEBAR=========================== -->
+
+            <aside class="sidebar">
+
+                <!-- DAshboard -->
+
+                <a href="<%=ResolveUrl("Admin_home_page.aspx") %>" 
+                    class="sidebar-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>EmpowerHer</span>
+                </a>
+                
+                <!-- USers -->
+
+                <a href="<%=ResolveUrl("Admin_users_page.aspx") %>" class="sidebar-item">
+                     <i class="fa-solid fa-box"></i>
+                     <span>Users</span>
+                </a>
+
+                <!-- PRoducts -->
+
+                <a href="<%=ResolveUrl("Admin_products_page.aspx") %>" class="sidebar-item">
+                     <i class="fa-solid fa-product-hunt"></i>
+                     <span>Products</span>
+                </a>
+                
+                <!-- GOvernment Scheames -->
+
+                <a href="<%=ResolveUrl("Admin_government_schemes_page.aspx") %>" class="sidebar-item">
+                     <i class="fa-solid fa-building-columns"></i>
+                     <span>Government Schemes</span>
+                </a>
+
+                
+                <!-- COurses -->
+
+                <a href="<%=ResolveUrl("Admin_courses_page.aspx") %>" class="sidebar-item">
+                     <i class="fa-solid fa-book"></i>
+                     <span>Courses</span>
+                </a>
+
+                
+                <!-- FInancial Literacy -->
+
+                <a href="<%=ResolveUrl("Admin_financial_literacy_page.aspx") %>" class="sidebar-item">
+                     <i class="fa-solid fa-coins"></i>
+                     <span>Financial Literacy</span>
+                </a>
+
+                
+                <!-- NOtifications -->
+
+                <a href="<%=ResolveUrl("Admin_notifications_page.aspx") %>" class="sidebar-item">
+                     <i class="fa-solid fa-bell"></i>
+                     <span>Notifications</span>
+                </a>
+
+                
+                <!-- TEstimonials -->
+
+                <a href="<%=ResolveUrl("Admin_testimonials_page.aspx") %>" class="sidebar-item">
+                     <i class="fa-solid fa-message"></i>
+                     <span>Testimonials</span>
+                </a>
+
+                
+                <!-- LOgout -->
+
+                <a href="<%=ResolveUrl("Login.aspx") %>" class="sidebar-item">
+                     <i class="fa-solid fa-right-from-bracket"></i>
+                     <span>Logout</span>
+                </a>
+
+            </aside>
+
+            <!-- ================= PAGE CONTENT ================= -->
+
+            <main class="page-content">
+
+                <asp:ContentPlaceHolder
+                    ID="ContentPlaceHolder1"
+                    runat="server">
+
+                </asp:ContentPlaceHolder>
+
+            </main>
+
         </div>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="main-footer">
+
+            <div class="footer-content">
+
+
+                <!-- EmpowerHer -->
+
+                <div class="footer-brand">
+
+                    <h3>
+                        EmpowerHer
+                    </h3>
+
+                    <p>
+                        Empowering women through skills,
+                        knowledge and opportunities.
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+
+                <div class="footer-section">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <a href="#">
+                        Home
+                    </a>
+
+                    <a href="#">
+                        Courses
+                    </a>
+
+                    <a href="#">
+                        Government Schemes
+                    </a>
+
+                    <a href="#">
+                        Financial Literacy
+                    </a>
+
+                </div>
+
+
+                <!-- Support -->
+
+                <div class="footer-section">
+
+                    <h4>
+                        Support
+                    </h4>
+
+                    <a href="#">
+                        Contact Us
+                    </a>
+
+                    <a href="#">
+                        Help
+                    </a>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Copyright -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 EmpowerHer. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </footer>
+
     </form>
+
 </body>
+
 </html>

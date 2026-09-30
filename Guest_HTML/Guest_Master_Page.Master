@@ -1,45 +1,118 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Guest_Master_Page.Master.cs" Inherits="Empower_Her_1.Site1" %>
+﻿<%@ Master Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="Guest_Master_Page.Master.cs"
+    Inherits="Empower_Her_1.Site1" %>
 
 <!DOCTYPE html>
 
 <html>
+
 <head runat="server">
-    <title>Empower Her</title>
-    <!-- css links -->
-    <link href="CSS/style.css" rel="stylesheet" />
-    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    <title>EmpowerHer</title>
+
+    <!-- Common Guest CSS -->
+    <link href="../Guest_CSS/guest_header_css.css"
+          rel="stylesheet" />
+
+    <!-- Page-specific CSS -->
+    <asp:ContentPlaceHolder
+        ID="head"
+        runat="server">
     </asp:ContentPlaceHolder>
+
 </head>
+
+
 <body>
-    <form id="form1" runat="server">
-        <!-- Navbar -->
-        <header>
+
+    <form
+        id="form1"
+        runat="server">
+
+
+        <!-- ================= NAVBAR ================= -->
+
+        <header class="navbar">
+
+
+            <!-- LOGO -->
+
             <div class="logo">
-                Empower Her
+
+                <img
+                    src="images/image 5.png"
+                    alt="EmpowerHer Logo" />
+
+                <span>
+                    EmpowerHer
+                </span>
+
             </div>
 
-            <nav>
-                <a href="Home.aspx">Home</a>
-                <a href="Products.aspx">Home</a>
-                <a href="About.aspx">Home</a>
-                <a href="Contact.aspx">Home</a>
-                <a href="Login.aspx">Home</a>
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-links">
+
+                <a href="Guest_home_page.aspx">
+                    Home
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Features
+                </a>
+
+                <a href="#">
+                    Schemes
+                </a>
+
+                <a href="#">
+                    Testimonials
+                </a>
+
+                <a href="#" class="login-btn">
+                    Login
+                </a>
+
+                <a href="#" class="register-btn">
+                    Register
+                </a>
+
             </nav>
+
         </header>
 
-        <!-- Page Content -->
+
+        <!-- ================= PAGE CONTENT ================= -->
+
         <main>
-            <div>
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
+
+            <asp:ContentPlaceHolder
+                ID="ContentPlaceHolder1"
+                runat="server">
+            </asp:ContentPlaceHolder>
+
         </main>
 
-        <!-- Footer -->
 
-        <footer1>
-            <p> @ 2026 Empower her</p>
-        </footer1>
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="footer">
+
+            <p>
+                © 2026 EmpowerHer
+            </p>
+
+        </footer>
+
+
     </form>
+
 </body>
+
 </html>

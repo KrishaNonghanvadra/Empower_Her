@@ -1,0 +1,121 @@
+﻿/* =====================================
+   EMPOWERHER FOOTER
+   Matching Header Theme
+===================================== */
+
+.main-footer {
+    width: 100%;
+    background-color: #302c55;
+    color: white;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   FOOTER CONTENT
+===================================== */
+
+.footer-content {
+    width: 100%;
+    padding: 30px 35px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+/* =====================================
+   EMPOWERHER BRAND
+===================================== */
+
+.footer-brand {
+    width: 40%;
+}
+
+    .footer-brand h3 {
+        margin: 0 0 10px 0;
+        color: #ff4f87;
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .footer-brand p {
+        margin: 0;
+        color: #ffffff;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+/* =====================================
+   FOOTER SECTIONS
+===================================== */
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+    .footer-section h4 {
+        margin: 0 0 8px 0;
+        color: #ff4f87;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+
+    /* =====================================
+   FOOTER LINKS
+===================================== */
+
+    .footer-section a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 13px;
+        transition: 0.2s;
+    }
+
+        .footer-section a:hover {
+            color: #ff4f87;
+        }
+
+
+/* =====================================
+   FOOTER BOTTOM
+===================================== */
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+    padding: 13px 20px;
+    box-sizing: border-box;
+}
+
+    .footer-bottom p {
+        margin: 0;
+        color: #eeeeee;
+        font-size: 12px;
+    }
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 700px) {
+
+    .footer-content {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 25px;
+    }
+
+    .footer-brand {
+        width: 100%;
+    }
+}

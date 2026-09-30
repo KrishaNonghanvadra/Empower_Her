@@ -69,7 +69,12 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="Admin_CSS\Admin_home_page.css" />
+    <Content Include="Admin_CSS\admin_product_css.css" />
+    <Content Include="Admin_CSS\footer_css.css" />
+    <Content Include="Admin_CSS\header_css.css" />
+    <Content Include="Admin_CSS\sidebar_css.css" />
     <Content Include="Admin_HTML\Admin_home_page.aspx" />
+    <Content Include="Admin_HTML\Admin_products_page.aspx" />
     <Content Include="Guest_CSS\guest_header_css.css" />
     <Content Include="User_CSS\User_home_page.css" />
     <Content Include="User_HTML\User_home_page.aspx" />
@@ -90,6 +95,13 @@
     </Compile>
     <Compile Include="Admin_HTML\Admin_Master_Page.Master.designer.cs">
       <DependentUpon>Admin_Master_Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_HTML\Admin_products_page.aspx.cs">
+      <DependentUpon>Admin_products_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_HTML\Admin_products_page.aspx.designer.cs">
+      <DependentUpon>Admin_products_page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Guest_HTML\Guest_Master_Page.Master.cs">
@@ -155,7 +167,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>62874</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62874/</IISUrl>
+          <IISUrl>http://localhost:5001/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

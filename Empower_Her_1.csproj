@@ -78,6 +78,7 @@
     <Content Include="Guest_CSS\guest_header_css.css" />
     <Content Include="User_CSS\User_home_page.css" />
     <Content Include="User_HTML\User_home_page.aspx" />
+    <Content Include="User_HTML\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="Guest_HTML\Guest_home_page.aspx" />
   </ItemGroup>
@@ -131,6 +132,13 @@
     </Compile>
     <Compile Include="User_HTML\User_Master_Page.Master.designer.cs">
       <DependentUpon>User_Master_Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

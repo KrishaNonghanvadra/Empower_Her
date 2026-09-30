@@ -1,2 +1,55 @@
-﻿body {
+﻿/* ==============================
+   HOME SECTION
+================================= */
+
+.home-section {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
 }
+
+
+    /* ==============================
+   HOME TITLE
+================================= */
+
+    .home-section h1 {
+        font-size: 45px;
+        color: #7b3f98;
+        margin-bottom: 15px;
+    }
+
+
+    /* ==============================
+   HOME DESCRIPTION
+================================= */
+
+    .home-section p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+
+/* ==============================
+   GET STARTED BUTTON
+================================= */
+
+.get-started-btn {
+    background-color: #7b3f98;
+    color: deeppink;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+    .get-started-btn:hover {
+        background-color: #642f7e;
+    }

@@ -72,6 +72,7 @@
     <Content Include="Admin_HTML\Admin_home_page.aspx" />
     <Content Include="Guest_CSS\guest_header_css.css" />
     <Content Include="User_CSS\User_home_page.css" />
+    <Content Include="User_CSS\User_Master_page.css" />
     <Content Include="User_HTML\User_home_page.aspx" />
     <Content Include="User_HTML\WebForm1.aspx" />
     <Content Include="Web.config" />

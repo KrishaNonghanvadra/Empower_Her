@@ -12,8 +12,6 @@
 
     <title>EmpowerHer</title>
 
-    <!-- Master Page CSS -->
-    <link href="../CSS/User_Master_page.css" rel="stylesheet" />
 
     <!-- Page-specific CSS -->
     <asp:ContentPlaceHolder 
@@ -48,9 +46,7 @@
                 Home
             </a>
 
-            <a href="#">
-                About
-            </a>
+        <!-- HEADER RIGHT -->
 
             <a href="#">
                 Features

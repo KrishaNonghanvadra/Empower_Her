@@ -4,7 +4,11 @@
     <link href="../CSS/User_home_page.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <!-- ================= HOME PAGE ================= -->
+  
+    
+    <!-- =====================================
+         DASHBOARD CONTENT
+    ====================================== -->
 
     <section class="home-section">
 

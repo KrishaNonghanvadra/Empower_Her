@@ -102,13 +102,68 @@
 
         <!-- ================= FOOTER ================= -->
 
-        <footer class="footer">
+        <footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <img src="images/image 5.png"
+                 alt="EmpowerHer Logo"
+                 class="footer-logo" />
+
+            <h2>EmpowerHer</h2>
 
             <p>
-                © 2026 EmpowerHer
+                Empowering women through skills,
+                opportunities and financial awareness.
             </p>
+        </div>
 
-        </footer>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="Guest_home_page.aspx">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Features</a>
+            <a href="#">Schemes</a>
+            <a href="#">Testimonials</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Account</h3>
+
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h3>Contact Us</h3>
+
+            <p>Email: empowerher@gmail.com</p>
+            <p>Phone: +91 XXXXX XXXXX</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 EmpowerHer. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
 
 
     </form>

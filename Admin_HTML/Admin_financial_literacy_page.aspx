@@ -1,16 +1,16 @@
-﻿<%@ Page Title="Products"
+﻿<%@ Page Title="Financial Literacy"
     Language="C#"
     MasterPageFile="~/Admin_HTML/Admin_Master_Page.Master"
     AutoEventWireup="true"
-    CodeBehind="Admin_products_page.aspx.cs"
-    Inherits="Empower_Her_1.Admin_HTML.Admin_products_page" %>
+    CodeBehind="Admin_financial_literacy_page.aspx.cs"
+    Inherits="Empower_Her_1.Admin_HTML.Admin_financial_literacy_page" %>
 
 
 <asp:Content ID="Content1"
     ContentPlaceHolderID="head"
     runat="server">
 
-    <link href="<%= ResolveUrl("~/Admin_CSS/admin_product_css.css") %>"
+    <link href="<%= ResolveUrl("~/Admin_CSS/admin_financial_literacy_page_css.css") %>"
         rel="stylesheet" />
 
 </asp:Content>
@@ -20,25 +20,25 @@
     ContentPlaceHolderID="ContentPlaceHolder1"
     runat="server">
 
-    <div class="product-container">
+    <div class="literacy-container">
 
-        <div class="product-header">
+        <div class="literacy-header">
 
-            <div class="product-title">
+            <div class="literacy-title">
 
-                <h2>Products</h2>
+                <h2>Financial Literacy Topic</h2>
 
-                <p>Add, edit and delete product</p>
+                <p>Add, edit and delete financial literacy topics</p>
 
             </div>
 
 
             <asp:Button
-                ID="btnAddProduct"
+                ID="btnAddTopic"
                 runat="server"
-                Text="＋ Add Product"
-                CssClass="add-btn"
-                OnClick="btnAddProduct_Click" />
+                Text="＋ Add Topic"
+                CssClass="add-topic-btn"
+                OnClick="btnAddTopic_Click" />
 
         </div>
 
@@ -46,20 +46,20 @@
         <asp:TextBox
             ID="txtSearch"
             runat="server"
-            CssClass="search-box"
-            placeholder="⌕  Search products.....">
+            CssClass="literacy-search"
+            placeholder="⌕  Search topics.....">
         </asp:TextBox>
 
 
-        <div class="table-wrapper">
+        <div class="literacy-table-wrapper">
 
             <asp:GridView
-                ID="gvProducts"
+                ID="gvTopics"
                 runat="server"
                 AutoGenerateColumns="False"
-                CssClass="product-table"
+                CssClass="literacy-table"
                 GridLines="None"
-                OnRowCommand="gvProducts_RowCommand">
+                OnRowCommand="gvTopics_RowCommand">
 
                 <Columns>
 
@@ -68,20 +68,12 @@
                         HeaderText="id" />
 
                     <asp:BoundField
-                        DataField="ProductName"
-                        HeaderText="Products" />
+                        DataField="TopicTitle"
+                        HeaderText="Topic title" />
 
                     <asp:BoundField
                         DataField="Category"
                         HeaderText="Category" />
-
-                    <asp:BoundField
-                        DataField="Price"
-                        HeaderText="Price" />
-
-                    <asp:BoundField
-                        DataField="Seller"
-                        HeaderText="Seller" />
 
                     <asp:TemplateField
                         HeaderText="Status">
@@ -103,14 +95,14 @@
                         <ItemTemplate>
 
                             <asp:LinkButton
-                                ID="btnView"
+                                ID="btnEdit"
                                 runat="server"
-                                CssClass="action-btn view-btn"
-                                CommandName="ViewProduct"
+                                CssClass="topic-action edit-topic"
+                                CommandName="EditTopic"
                                 CommandArgument='<%# Eval("Id") %>'
-                                ToolTip="View Product">
+                                ToolTip="Edit Topic">
 
-                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pen"></i>
 
                             </asp:LinkButton>
 
@@ -118,11 +110,11 @@
                             <asp:LinkButton
                                 ID="btnDelete"
                                 runat="server"
-                                CssClass="action-btn delete-btn"
-                                CommandName="DeleteProduct"
+                                CssClass="topic-action delete-topic"
+                                CommandName="DeleteTopic"
                                 CommandArgument='<%# Eval("Id") %>'
-                                ToolTip="Delete Product"
-                                OnClientClick="return confirm('Are you sure you want to delete this product?');">
+                                ToolTip="Delete Topic"
+                                OnClientClick="return confirm('Are you sure you want to delete this topic?');">
 
                                 <i class="fa-solid fa-trash"></i>
 

@@ -1,8 +1,8 @@
 ﻿/* =========================================
-   PRODUCT CONTAINER
+   USERS PAGE
    ========================================= */
 
-.product-container {
+.users-container {
     padding: 20px 30px;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
@@ -10,23 +10,23 @@
 
 
 /* =========================================
-   PRODUCT HEADER
+   PAGE HEADER
    ========================================= */
 
-.product-header {
+.users-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 18px;
 }
 
-.product-title h2 {
+.users-title h2 {
     margin: 0;
     font-size: 25px;
     color: #111;
 }
 
-.product-title p {
+.users-title p {
     margin: 4px 0 0;
     font-size: 13px;
     color: #111;
@@ -35,10 +35,10 @@
 
 
 /* =========================================
-   ADD PRODUCT BUTTON
+   ADD USER BUTTON
    ========================================= */
 
-.add-btn {
+.add-user-btn {
     background-color: #e91667;
     color: white;
     border: none;
@@ -49,16 +49,16 @@
     font-weight: 500;
 }
 
-    .add-btn:hover {
+    .add-user-btn:hover {
         background-color: #d3135d;
     }
 
 
 /* =========================================
-   SEARCH
+   SEARCH BOX
    ========================================= */
 
-.search-box {
+.user-search {
     width: 365px;
     height: 30px;
     border: 1px solid #bdbdbd;
@@ -70,7 +70,7 @@
     outline: none;
 }
 
-    .search-box:focus {
+    .user-search:focus {
         border-color: #e91667;
     }
 
@@ -79,7 +79,7 @@
    TABLE WRAPPER
    ========================================= */
 
-.table-wrapper {
+.user-table-wrapper {
     width: 100%;
     background-color: #d9d9d9;
     padding: 10px;
@@ -89,10 +89,10 @@
 
 
 /* =========================================
-   PRODUCT TABLE
+   USER TABLE
    ========================================= */
 
-.product-table {
+.user-table {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
@@ -105,13 +105,14 @@
    TABLE HEADER
    ========================================= */
 
-    .product-table th {
-        background-color: white;
+    .user-table th {
+        background-color: #ffffff;
         color: #111;
-        padding: 12px;
-        text-align: left;
-        border: 1px solid #ddd;
+        font-size: 11px;
         font-weight: bold;
+        text-align: left;
+        padding: 11px 10px;
+        border-bottom: 1px solid #eeeeee;
     }
 
 
@@ -119,34 +120,24 @@
    TABLE DATA
    ========================================= */
 
-    .product-table td {
-        background-color: white;
+    .user-table td {
+        background-color: #ffffff;
         color: #222;
-        padding: 11px 10px;
+        padding: 12px 10px;
         border-bottom: 1px solid #eeeeee;
         vertical-align: middle;
     }
-
-
-        /* =========================================
-   PRODUCT NAME
-   ========================================= */
-
-        .product-table td:nth-child(2) {
-            font-weight: bold;
-            color: #111;
-        }
 
 
     /* =========================================
    TABLE ROW
    ========================================= */
 
-    .product-table tr {
-        height: 40px;
+    .user-table tr {
+        height: 38px;
     }
 
-        .product-table tr:hover td {
+        .user-table tr:hover td {
             background-color: #fafafa;
         }
 
@@ -166,7 +157,7 @@
    ACTION BUTTONS
    ========================================= */
 
-.action-btn {
+.user-action {
     text-decoration: none;
     border: none;
     background: transparent;
@@ -178,22 +169,22 @@
 
 /* View */
 
-.view-btn {
+.view-user {
     color: #111;
 }
 
-    .view-btn:hover {
+    .view-user:hover {
         color: #555;
     }
 
 
 /* Delete */
 
-.delete-btn {
+.delete-user {
     color: #f0445e;
 }
 
-    .delete-btn:hover {
+    .delete-user:hover {
         color: #d7193f;
     }
 
@@ -204,21 +195,21 @@
 
 @media (max-width: 800px) {
 
-    .product-container {
+    .users-container {
         padding: 15px;
     }
 
-    .product-header {
+    .users-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
 
-    .search-box {
+    .user-search {
         width: 100%;
     }
 
-    .table-wrapper {
+    .user-table-wrapper {
         overflow-x: auto;
     }
 }

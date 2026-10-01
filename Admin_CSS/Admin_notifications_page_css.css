@@ -1,0 +1,239 @@
+﻿/* =========================================
+   NOTIFICATION CONTAINER
+   ========================================= */
+
+.notification-container {
+    margin: 0 20px;
+    padding: 8px 15px 20px 15px;
+    background-color: #fbf2f7;
+    border-radius: 14px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    min-height: 445px;
+}
+
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.notification-title {
+    margin-bottom: 18px;
+}
+
+    .notification-title h2 {
+        margin: 0;
+        color: #111;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .notification-title p {
+        margin: 3px 0 0;
+        color: #111;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.notification-form {
+    width: 48%;
+    padding-left: 18px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FORM GROUP
+   ========================================= */
+
+.form-group {
+    margin-bottom: 9px;
+}
+
+.small-group {
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   LABEL
+   ========================================= */
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #111;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TEXT INPUT
+   ========================================= */
+
+.notification-input {
+    width: 265px;
+    height: 28px;
+    padding: 0 9px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+    .notification-input:focus {
+        border-color: #e91667;
+    }
+
+
+/* =========================================
+   MESSAGE
+   ========================================= */
+
+.notification-message {
+    width: 265px;
+    height: 106px;
+    padding: 8px 9px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+    .notification-message:focus {
+        border-color: #e91667;
+    }
+
+
+/* =========================================
+   DROPDOWN
+   ========================================= */
+
+.notification-dropdown {
+    width: 175px;
+    height: 26px;
+    padding: 0 8px;
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    background-color: white;
+    color: #777;
+    font-size: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SEND BUTTON
+   ========================================= */
+
+.send-notification-btn {
+    margin-top: 7px;
+    padding: 9px 18px;
+    background-color: #e91667;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    .send-notification-btn:hover {
+        background-color: #d3135d;
+    }
+
+
+/* =========================================
+   RESULT MESSAGE
+   ========================================= */
+
+.notification-result {
+    display: block;
+    margin-top: 8px;
+    color: #29905e;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   IMAGE
+   ========================================= */
+
+.notification-image {
+    width: 50%;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+    .notification-image img {
+        width: 350px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .notification-container {
+        margin: 0 10px;
+    }
+
+    .notification-content {
+        flex-direction: column;
+    }
+
+    .notification-form {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .notification-image {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .notification-input,
+    .notification-message {
+        width: 100%;
+    }
+
+    .notification-dropdown {
+        width: 100%;
+    }
+}

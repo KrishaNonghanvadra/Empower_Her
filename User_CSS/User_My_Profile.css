@@ -1,0 +1,222 @@
+﻿/* =========================================
+   MY PROFILE PAGE
+========================================= */
+
+.profile-page {
+    padding: 20px 25px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.profile-header {
+    margin-bottom: 15px;
+}
+
+    .profile-header h1 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+        color: #111;
+    }
+
+
+/* =========================================
+   PROFILE CARD
+========================================= */
+
+.profile-card {
+    width: 100%;
+    min-height: 260px;
+    background-color: #fff0f2;
+    border: 1px solid #ead7da;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TOP PROFILE SECTION
+========================================= */
+
+.profile-top {
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* =========================================
+   PROFILE PHOTO
+========================================= */
+
+.profile-photo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+/* =========================================
+   PROFILE INFORMATION
+========================================= */
+
+.profile-info {
+    margin-left: 20px;
+}
+
+
+    .profile-info h3 {
+        margin: 0 0 7px 0;
+        font-size: 12px;
+        font-weight: 600;
+        color: #222;
+    }
+
+
+    .profile-info p {
+        margin: 0 0 5px 0;
+        font-size: 9px;
+        color: #333;
+    }
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.profile-edit {
+    margin-left: auto;
+    align-self: flex-start;
+    margin-top: 3px;
+}
+
+
+.edit-profile-btn {
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid #ff5b78;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ff456b;
+    text-decoration: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+    .edit-profile-btn:hover {
+        background-color: #ff456b;
+        color: white;
+        transition: 0.2s;
+    }
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.profile-divider {
+    height: 1px;
+    background-color: #ead7da;
+    margin: 0 20px;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.profile-about {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+/* =========================================
+   ABOUT TEXT
+========================================= */
+
+.about-text h2 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+.about-text p {
+    margin: 0 0 7px 0;
+    font-size: 9px;
+    color: #333;
+}
+
+
+/* =========================================
+   JOINED DATE
+========================================= */
+
+.joined-date {
+    min-width: 90px;
+    margin-right: 10px;
+}
+
+
+    .joined-date h3 {
+        margin: 0 0 5px 0;
+        font-size: 10px;
+        font-weight: 600;
+        color: #222;
+    }
+
+
+    .joined-date p {
+        margin: 0;
+        font-size: 9px;
+        color: #333;
+    }
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 650px) {
+
+    .profile-page {
+        padding: 15px;
+    }
+
+    .profile-top {
+        flex-wrap: wrap;
+    }
+
+    .profile-edit {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .profile-about {
+        flex-direction: column;
+    }
+
+    .joined-date {
+        margin-top: 20px;
+    }
+}

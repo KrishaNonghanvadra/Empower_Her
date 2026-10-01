@@ -76,10 +76,28 @@
     <Content Include="Admin_HTML\Admin_home_page.aspx" />
     <Content Include="Admin_HTML\Admin_products_page.aspx" />
     <Content Include="Guest_CSS\guest_header_css.css" />
+    <Content Include="User_CSS\User_Change_Password.css" />
+    <Content Include="User_CSS\User_Courses.css" />
+    <Content Include="User_CSS\User_Edit_Profile.css" />
+    <Content Include="User_CSS\User_Financial_Literacy.css" />
+    <Content Include="User_CSS\User_Government_Schemes.css" />
+    <Content Include="User_CSS\User_My_Products.css" />
     <Content Include="User_CSS\User_home_page.css" />
     <Content Include="User_CSS\User_Master_page.css" />
+    <Content Include="User_CSS\User_Master_Page1.css" />
+    <Content Include="User_CSS\User_My_Profile.css" />
+    <Content Include="User_CSS\User_Notifications.css" />
+    <Content Include="User_HTML\User_Change_Password.aspx" />
+    <Content Include="User_HTML\User_Courses.aspx" />
+    <Content Include="User_HTML\User_Edit_Profile.aspx" />
+    <Content Include="User_HTML\User_Financial_Literacy.aspx" />
+    <Content Include="User_HTML\User_Government_Schemes.aspx" />
     <Content Include="User_HTML\User_home_page.aspx" />
+    <Content Include="User_HTML\User_My_Products.aspx" />
+    <Content Include="User_HTML\User_My_Profile.aspx" />
+    <Content Include="User_HTML\User_Notifications.aspx" />
     <Content Include="User_HTML\WebForm1.aspx" />
+    <Content Include="User_Images\courses_image1.jpg.png" />
     <Content Include="Web.config" />
     <Content Include="Guest_HTML\Guest_home_page.aspx" />
   </ItemGroup>
@@ -120,6 +138,41 @@
     <Compile Include="Guest_HTML\Guest_home_page.aspx.designer.cs">
       <DependentUpon>Guest_home_page.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User_HTML\User_Change_Password.aspx.cs">
+      <DependentUpon>User_Change_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_Change_Password.aspx.designer.cs">
+      <DependentUpon>User_Change_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\User_Courses.aspx.cs">
+      <DependentUpon>User_Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_Courses.aspx.designer.cs">
+      <DependentUpon>User_Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\User_Edit_Profile.aspx.cs">
+      <DependentUpon>User_Edit_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_Edit_Profile.aspx.designer.cs">
+      <DependentUpon>User_Edit_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\User_Financial_Literacy.aspx.cs">
+      <DependentUpon>User_Financial_Literacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_Financial_Literacy.aspx.designer.cs">
+      <DependentUpon>User_Financial_Literacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\User_Government_Schemes.aspx.cs">
+      <DependentUpon>User_Government_Schemes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_Government_Schemes.aspx.designer.cs">
+      <DependentUpon>User_Government_Schemes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User_HTML\User_home_page.aspx.cs">
       <DependentUpon>User_home_page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,6 +186,27 @@
     </Compile>
     <Compile Include="User_HTML\User_Master_Page.Master.designer.cs">
       <DependentUpon>User_Master_Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\User_My_Products.aspx.cs">
+      <DependentUpon>User_My_Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_My_Products.aspx.designer.cs">
+      <DependentUpon>User_My_Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\User_My_Profile.aspx.cs">
+      <DependentUpon>User_My_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_My_Profile.aspx.designer.cs">
+      <DependentUpon>User_My_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\User_Notifications.aspx.cs">
+      <DependentUpon>User_Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_Notifications.aspx.designer.cs">
+      <DependentUpon>User_Notifications.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_HTML\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

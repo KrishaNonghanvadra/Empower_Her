@@ -1,0 +1,230 @@
+﻿/* =========================================
+   FINANCIAL LITERACY PAGE
+========================================= */
+
+.financial-page {
+    padding: 20px 25px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.financial-header {
+    margin-bottom: 20px;
+}
+
+    .financial-header h1 {
+        margin: 0 0 3px 0;
+        font-size: 23px;
+        font-weight: 600;
+        color: #111;
+    }
+
+    .financial-header p {
+        margin: 0;
+        font-size: 13px;
+        color: #333;
+    }
+
+
+/* =========================================
+   FINANCIAL CATEGORIES
+========================================= */
+
+.financial-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 38px;
+}
+
+
+/* =========================================
+   CATEGORY CARD
+========================================= */
+
+.financial-card {
+    height: 145px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CARD BACKGROUNDS
+========================================= */
+
+.savings-card {
+    background-color: #f0faf4;
+}
+
+.banking-card {
+    background-color: #f7f0fc;
+}
+
+.investment-card {
+    background-color: #fff7ef;
+}
+
+.insurance-card {
+    background-color: #f2f6fd;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.financial-icon {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 3px;
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.financial-card h3 {
+    margin: 0 0 6px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #111;
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.financial-card p {
+    margin: 0;
+    font-size: 9px;
+    line-height: 13px;
+    color: #333;
+}
+
+
+/* =========================================
+   RECOMMENDED SECTION
+========================================= */
+
+.recommended-section h2 {
+    margin: 0 0 18px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+}
+
+
+/* =========================================
+   RECOMMENDED GRID
+========================================= */
+
+.recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================================
+   RECOMMENDED CARD
+========================================= */
+
+.recommended-card {
+    height: 65px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   COURSE IMAGE
+========================================= */
+
+.recommended-image {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+    .recommended-image img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+
+/* =========================================
+   COURSE INFORMATION
+========================================= */
+
+.recommended-info {
+    margin-left: 12px;
+}
+
+    .recommended-info h3 {
+        margin: 0 0 5px 0;
+        font-size: 12px;
+        font-weight: 600;
+        color: #222;
+    }
+
+    .recommended-info p {
+        margin: 0;
+        font-size: 9px;
+        color: #333;
+    }
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.financial-card:hover,
+.recommended-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+    transition: 0.2s;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 700px) {
+
+    .financial-categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .recommended-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .financial-categories {
+        grid-template-columns: 1fr;
+    }
+}

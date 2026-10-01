@@ -13,6 +13,9 @@
     <title>EmpowerHer</title>
 
 
+    <link href="<%= ResolveUrl("~/User_CSS/User_Master_Page1.css") %>"
+         rel="stylesheet" />
+
     <!-- Page-specific CSS -->
     <asp:ContentPlaceHolder 
         ID="head" 
@@ -25,44 +28,34 @@
 <body>
 
 <form id="form1" runat="server">
-
-
-    <!-- ================= HEADER ================= -->
+    
+    <!-- =========================================
+         HEADER
+    ========================================== -->
 
     <header class="user-header">
 
-        <!-- Logo -->
+
+        <!-- LOGO -->
+
         <div class="header-logo">
 
-            <h2>EmpowerHer</h2>
+            <div class="logo-icon">
+                ♡
+            </div>
+
+            <span class="logo-text">EmpowerHer
+            </span>
 
         </div>
 
 
-        <!-- Navigation -->
-        <nav class="header-nav">
-
-            <a href="User_home_page.aspx">
-                Home
-            </a>
-
         <!-- HEADER RIGHT -->
 
-            <a href="#">
-                Features
-            </a>
-
-            <a href="#">
-                Schemes
-            </a>
-
-        </nav>
-
-
-        <!-- Right Side -->
         <div class="header-right">
 
             <!-- Notification -->
+
             <a href="#" class="notification">
 
                 🔔
@@ -75,14 +68,15 @@
 
 
             <!-- Profile -->
+
             <div class="profile">
 
                 <div class="profile-img">
-                    U
+                    K
                 </div>
 
                 <span class="profile-name">
-                    User
+                    krisha Patel
                 </span>
 
             </div>
@@ -92,34 +86,208 @@
     </header>
 
 
-    <!-- ================= PAGE CONTENT ================= -->
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- Dashboard -->
+
+        <a href="User_home_page.aspx"
+           class="sidebar-link active">
+
+            <span class="sidebar-icon">
+                🏠
+            </span>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <!-- Products -->
+
+        <a href="User_My_Products.aspx"
+           class="sidebar-link">
+
+            <span class="sidebar-icon">
+                ▣
+            </span>
+
+            <span>
+                Products
+            </span>
+
+        </a>
+
+
+        <!-- Government Schemes -->
+
+        <a href="User_Government_Schemes.aspx"
+           class="sidebar-link">
+
+            <span class="sidebar-icon">
+                🏛
+            </span>
+
+            <span>
+                Government Schemes
+            </span>
+
+        </a>
+
+
+        <!-- Financial Literacy -->
+
+        <a href="User_Financial_Literacy.aspx"
+           class="sidebar-link">
+
+            <span class="sidebar-icon">
+                ▣
+            </span>
+
+            <span>
+                Financial Literacy
+            </span>
+
+        </a>
+
+
+        <!-- Notifications -->
+
+        <a href="User_Notifications.aspx"
+           class="sidebar-link">
+
+            <span class="sidebar-icon">
+                ⏱
+            </span>
+
+            <span>
+                Notifications
+            </span>
+
+        </a>
+
+
+        <!-- My Profile -->
+
+        <a href="User_My_Profile.aspx"
+           class="sidebar-link">
+
+            <span class="sidebar-icon">
+                ◉
+            </span>
+
+            <span>
+                My Profile
+            </span>
+
+        </a>
+
+
+        <!-- Settings -->
+
+        <a href="User_Change_Password.aspx"
+           class="sidebar-link">
+
+            <span class="sidebar-icon">
+                ⚙
+            </span>
+
+            <span>
+                Settings
+            </span>
+
+        </a>
+
+
+        <!-- Courses -->
+
+        <a href="User_Courses.aspx"
+           class="sidebar-link">
+
+            <span class="sidebar-icon">
+                ▣
+            </span>
+
+            <span>
+                Courses
+            </span>
+
+        </a>
+
+
+        <!-- Logout -->
+
+        <a href="#"
+           class="sidebar-link logout-link">
+
+            <span class="sidebar-icon">
+                ⇥
+            </span>
+
+            <span>
+                Logout
+            </span>
+
+        </a>
+
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
 
     <main class="main-content">
 
-        <asp:ContentPlaceHolder 
-            ID="ContentPlaceHolder1" 
+
+        <asp:ContentPlaceHolder
+            ID="ContentPlaceHolder1"
             runat="server">
 
         </asp:ContentPlaceHolder>
 
+
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
 
     <footer class="user-footer">
 
         <div class="footer-content">
 
-            <h3>EmpowerHer</h3>
+            <div>
 
-            <p>
-                Empowering Women Through Skills & Opportunities
-            </p>
+                <h3>
+                    EmpowerHer
+                </h3>
 
-            <p class="copyright">
-                © 2026 EmpowerHer. All Rights Reserved.
-            </p>
+                <p>
+                    Empowering Women Through Skills & Opportunities
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p class="copyright">
+                    © 2026 EmpowerHer. All Rights Reserved.
+                </p>
+
+            </div>
 
         </div>
 
@@ -127,6 +295,8 @@
 
 
 </form>
+
+
 
 </body>
 

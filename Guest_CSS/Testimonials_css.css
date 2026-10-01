@@ -1,0 +1,193 @@
+﻿.testimonials-page {
+    background-color: #fcf1f8;
+    min-height: 650px;
+    padding: 50px 55px 70px 55px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+.testimonials-heading {
+    margin-bottom: 42px;
+}
+
+    .testimonials-heading h1 {
+        margin: 0;
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #35206b;
+    }
+
+        .testimonials-heading h1 span {
+            color: #ed1760;
+        }
+
+    .testimonials-heading p {
+        margin: 12px 0 0 0;
+        font-size: 18px;
+        color: #444444;
+    }
+
+
+/* =========================
+   TESTIMONIAL GRID
+   ========================= */
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   TESTIMONIAL CARD
+   ========================= */
+
+.testimonial-card {
+    background-color: #ffffff;
+    min-height: 300px;
+    border-radius: 12px;
+    padding: 30px 28px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.14);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .testimonial-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.17);
+    }
+
+
+/* =========================
+   QUOTATION MARK
+   ========================= */
+
+.quote-mark {
+    font-size: 52px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ed1760;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TESTIMONIAL TEXT
+   ========================= */
+
+.testimonial-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #444444;
+    flex: 1;
+}
+
+
+/* =========================
+   USER INFORMATION
+   ========================= */
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+/* Profile Circle */
+
+.user-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ed1760;
+    font-size: 27px;
+    margin-right: 14px;
+}
+
+
+/* Name + State */
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+    .user-info h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #222222;
+    }
+
+    .user-info p {
+        margin: 5px 0 0 0;
+        font-size: 13px;
+        color: #555555;
+    }
+
+
+/* =========================
+   STARS
+   ========================= */
+
+.stars {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #ed1760;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .testimonials-page {
+        padding: 40px 20px 50px 20px;
+    }
+
+    .testimonials-heading h1 {
+        font-size: 32px;
+    }
+
+    .testimonials-heading p {
+        font-size: 15px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        min-height: 280px;
+    }
+}

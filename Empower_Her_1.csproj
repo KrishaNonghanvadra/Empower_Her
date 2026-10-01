@@ -74,22 +74,29 @@
     <Content Include="Admin_HTML\Admin_home_page.aspx" />
     <Content Include="Admin_HTML\Admin_products_page.aspx" />
     <Content Include="Guest_CSS\about_us_css.css" />
+    <Content Include="Guest_CSS\contact_us_css.css" />
     <Content Include="Guest_CSS\features_css.css" />
     <Content Include="Guest_CSS\government_schemes_css.css" />
     <Content Include="Guest_CSS\guest_header_css.css" />
     <Content Include="Guest_CSS\guest_home_css.css" />
+    <Content Include="Guest_CSS\login_css.css" />
+    <Content Include="Guest_CSS\Testimonials_css.css" />
     <Content Include="Guest_HTML\About_Us.aspx" />
+    <Content Include="Guest_HTML\Contact_Us.aspx" />
     <Content Include="Guest_HTML\Features.aspx" />
     <Content Include="Guest_HTML\Government_Schemes.aspx" />
     <Content Include="Guest_HTML\images\at-icons_shop.png" />
     <Content Include="Guest_HTML\images\basil_bag-solid.png" />
+    <Content Include="Guest_HTML\images\basil_eye-outline.png" />
     <Content Include="Guest_HTML\images\carbon_review.png" />
     <Content Include="Guest_HTML\images\F.svg" />
     <Content Include="Guest_HTML\images\healthicons_register-book.png" />
+    <Content Include="Guest_HTML\images\icon-park_women.png" />
     <Content Include="Guest_HTML\images\iconamoon_notification-fill.png" />
     <Content Include="Guest_HTML\images\image 2.svg" />
     <Content Include="Guest_HTML\images\image 5.png" />
     <Content Include="Guest_HTML\images\mdi_university.png" />
+    <Content Include="Guest_HTML\images\my_girl.png" />
     <Content Include="Guest_HTML\images\Rectangle 242.png" />
     <Content Include="Guest_HTML\images\ri_government-fill %281%29.png" />
     <Content Include="Guest_HTML\images\ri_government-fill.png" />
@@ -98,6 +105,8 @@
     <Content Include="Guest_HTML\images\G.svg" />
     <Content Include="Guest_HTML\images\P.svg" />
     <Content Include="Guest_HTML\images\tdesign_money.png" />
+    <Content Include="Guest_HTML\Login.aspx" />
+    <Content Include="Guest_HTML\Testimonials.aspx" />
     <Content Include="User_CSS\User_home_page.css" />
     <Content Include="User_CSS\User_Master_page.css" />
     <Content Include="User_HTML\User_home_page.aspx" />
@@ -134,6 +143,13 @@
     <Compile Include="Guest_HTML\About_Us.aspx.designer.cs">
       <DependentUpon>About_Us.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Guest_HTML\Contact_Us.aspx.cs">
+      <DependentUpon>Contact_Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest_HTML\Contact_Us.aspx.designer.cs">
+      <DependentUpon>Contact_Us.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Guest_HTML\Features.aspx.cs">
       <DependentUpon>Features.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -147,6 +163,20 @@
     </Compile>
     <Compile Include="Guest_HTML\Government_Schemes.aspx.designer.cs">
       <DependentUpon>Government_Schemes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest_HTML\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest_HTML\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest_HTML\Testimonials.aspx.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest_HTML\Testimonials.aspx.designer.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Guest_HTML\Guest_Master_Page.Master.cs">

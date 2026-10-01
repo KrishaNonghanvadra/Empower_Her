@@ -1,55 +1,77 @@
-﻿/* ==============================
-   HOME SECTION
-================================= */
+﻿/* =========================================
+   DASHBOARD
+========================================= */
 
-.home-section {
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px 20px;
+.dashboard {
+    padding: 25px;
 }
 
 
-    /* ==============================
-   HOME TITLE
-================================= */
+    /* =========================================
+   DASHBOARD TITLE
+========================================= */
 
-    .home-section h1 {
-        font-size: 45px;
-        color: #7b3f98;
-        margin-bottom: 15px;
+    .dashboard h1 {
+        margin: 0 0 18px 0;
+        font-size: 22px;
+        color: #222222;
     }
 
 
-    /* ==============================
-   HOME DESCRIPTION
-================================= */
+/* =========================================
+   WELCOME BOX
+========================================= */
 
-    .home-section p {
-        font-size: 18px;
-        color: #666;
-        margin-bottom: 30px;
-    }
-
-
-/* ==============================
-   GET STARTED BUTTON
-================================= */
-
-.get-started-btn {
-    background-color: #7b3f98;
-    color: deeppink;
-    border: none;
-    padding: 12px 30px;
+.welcome-box {
+    width: 100%;
+    min-height: 130px;
+    background-color: #fff0f5;
     border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 25px;
 }
 
 
-    .get-started-btn:hover {
-        background-color: #642f7e;
+    /* =========================================
+   WELCOME TITLE
+========================================= */
+
+    .welcome-box h2 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        color: #111111;
     }
+
+
+    /* =========================================
+   WELCOME TEXT
+========================================= */
+
+    .welcome-box p {
+        margin: 0 0 15px 0;
+        font-size: 13px;
+        color: #333333;
+    }
+
+
+    /* =========================================
+   BUTTON
+========================================= */
+
+    .welcome-box button {
+        border: none;
+        background-color: #f52d78;
+        color: white;
+        padding: 7px 18px;
+        border-radius: 5px;
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+
+        /* =========================================
+   BUTTON HOVER
+========================================= */
+
+        .welcome-box button:hover {
+            background-color: #d91f66;
+        }

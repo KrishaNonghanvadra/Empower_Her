@@ -1,0 +1,158 @@
+﻿/* =========================================
+   EDIT PROFILE PAGE
+========================================= */
+
+.edit-profile-page {
+    padding: 15px 10px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.edit-profile-header {
+    margin-bottom: 12px;
+}
+
+    .edit-profile-header h1 {
+        margin: 0 0 3px 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #111;
+    }
+
+    .edit-profile-header p {
+        margin: 0;
+        font-size: 11px;
+        color: #333;
+    }
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.edit-profile-card {
+    position: relative;
+    width: 100%;
+    min-height: 270px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 10px;
+        font-weight: 600;
+        color: #222;
+    }
+
+
+    .form-group input {
+        width: 100%;
+        height: 25px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 10px;
+        color: #444;
+    }
+
+
+        .form-group input:focus {
+            border-color: #f52d78;
+        }
+
+
+/* =========================================
+   BUTTON AREA
+========================================= */
+
+.form-buttons {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.cancel-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 25px;
+    border: 1px solid #ff4c73;
+    border-radius: 4px;
+    background-color: white;
+    color: #e91e63;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+
+    .cancel-btn:hover {
+        background-color: #fff0f4;
+    }
+
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.save-btn {
+    width: 82px;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f20f62;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+    .save-btn:hover {
+        background-color: #d90b54;
+    }
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 650px) {
+
+    .edit-profile-card {
+        grid-template-columns: 1fr;
+    }
+
+    .form-buttons {
+        grid-column: 1;
+    }
+}

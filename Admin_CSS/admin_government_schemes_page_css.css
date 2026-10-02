@@ -1,8 +1,8 @@
 ﻿/* =========================================
-   PRODUCT CONTAINER
+   GOVERNMENT SCHEME CONTAINER
    ========================================= */
 
-.product-container {
+.scheme-container {
     padding: 20px 30px;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
@@ -10,23 +10,23 @@
 
 
 /* =========================================
-   PRODUCT HEADER
+   HEADER
    ========================================= */
 
-.product-header {
+.scheme-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 18px;
 }
 
-.product-title h2 {
+.scheme-title h2 {
     margin: 0;
     font-size: 25px;
     color: #111;
 }
 
-.product-title p {
+.scheme-title p {
     margin: 4px 0 0;
     font-size: 13px;
     color: #111;
@@ -35,10 +35,10 @@
 
 
 /* =========================================
-   ADD PRODUCT BUTTON
+   ADD SCHEME BUTTON
    ========================================= */
 
-.add-btn {
+.add-scheme-btn {
     background-color: #e91667;
     color: white;
     border: none;
@@ -49,7 +49,7 @@
     font-weight: 500;
 }
 
-    .add-btn:hover {
+    .add-scheme-btn:hover {
         background-color: #d3135d;
     }
 
@@ -58,7 +58,7 @@
    SEARCH
    ========================================= */
 
-.search-box {
+.scheme-search {
     width: 365px;
     height: 30px;
     border: 1px solid #bdbdbd;
@@ -70,7 +70,7 @@
     outline: none;
 }
 
-    .search-box:focus {
+    .scheme-search:focus {
         border-color: #e91667;
     }
 
@@ -79,7 +79,7 @@
    TABLE WRAPPER
    ========================================= */
 
-.table-wrapper {
+.scheme-table-wrapper {
     width: 100%;
     background-color: #d9d9d9;
     padding: 10px;
@@ -89,10 +89,10 @@
 
 
 /* =========================================
-   PRODUCT TABLE
+   TABLE
    ========================================= */
 
-.product-table {
+.scheme-table {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
@@ -105,13 +105,14 @@
    TABLE HEADER
    ========================================= */
 
-    .product-table th {
+    .scheme-table th {
         background-color: white;
         color: #111;
-        padding: 12px;
-        text-align: left;
-        border: 1px solid #ddd;
+        font-size: 11px;
         font-weight: bold;
+        text-align: left;
+        padding: 11px 10px;
+        border-bottom: 1px solid #eeeeee;
     }
 
 
@@ -119,7 +120,7 @@
    TABLE DATA
    ========================================= */
 
-    .product-table td {
+    .scheme-table td {
         background-color: white;
         color: #222;
         padding: 11px 10px;
@@ -129,24 +130,24 @@
 
 
         /* =========================================
-   PRODUCT NAME
+   SCHEME NAME
    ========================================= */
 
-        .product-table td:nth-child(2) {
+        .scheme-table td:nth-child(2) {
             font-weight: bold;
             color: #111;
         }
 
 
     /* =========================================
-   TABLE ROW
+   ROW
    ========================================= */
 
-    .product-table tr {
+    .scheme-table tr {
         height: 40px;
     }
 
-        .product-table tr:hover td {
+        .scheme-table tr:hover td {
             background-color: #fafafa;
         }
 
@@ -166,34 +167,34 @@
    ACTION BUTTONS
    ========================================= */
 
-.action-btn {
+.scheme-action {
     text-decoration: none;
     border: none;
     background: transparent;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     margin-right: 12px;
 }
 
 
-/* View */
+/* Edit */
 
-.view-btn {
-    color: #111;
+.edit-scheme {
+    color: #aaa900;
 }
 
-    .view-btn:hover {
-        color: #555;
+    .edit-scheme:hover {
+        color: #858500;
     }
 
 
 /* Delete */
 
-.delete-btn {
+.delete-scheme {
     color: #f0445e;
 }
 
-    .delete-btn:hover {
+    .delete-scheme:hover {
         color: #d7193f;
     }
 
@@ -204,21 +205,21 @@
 
 @media (max-width: 800px) {
 
-    .product-container {
+    .scheme-container {
         padding: 15px;
     }
 
-    .product-header {
+    .scheme-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
 
-    .search-box {
+    .scheme-search {
         width: 100%;
     }
 
-    .table-wrapper {
+    .scheme-table-wrapper {
         overflow-x: auto;
     }
 }

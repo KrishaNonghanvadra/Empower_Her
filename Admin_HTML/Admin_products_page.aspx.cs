@@ -14,6 +14,7 @@ namespace Empower_Her_1.Admin_HTML
             }
         }
 
+
         private void LoadProducts()
         {
             var products = new[]
@@ -21,57 +22,74 @@ namespace Empower_Her_1.Admin_HTML
                 new
                 {
                     Id = 1,
-                    ProductName = "Handmade Bags",
-                    Category = "Handicraft",
-                    Price = 599,
-                    Seller = "Priya",
+                    ProductName = "Decorative Candle Set",
+                    Category = "Home Decor",
+                    Price = 500,
+                    Seller = "Krisha Patel",
                     Status = "Active"
                 },
 
                 new
                 {
                     Id = 2,
-                    ProductName = "Organic Soap",
-                    Category = "Beauty",
-                    Price = 249,
-                    Seller = "Anjali",
+                    ProductName = "Handmade Bag",
+                    Category = "Handicraft",
+                    Price = 750,
+                    Seller = "Priya Shah",
                     Status = "Active"
                 },
 
                 new
                 {
                     Id = 3,
-                    ProductName = "Handmade Jewelry",
+                    ProductName = "Organic Soap",
+                    Category = "Beauty",
+                    Price = 250,
+                    Seller = "Anjali Patel",
+                    Status = "Active"
+                },
+
+                new
+                {
+                    Id = 4,
+                    ProductName = "Handmade Necklace",
                     Category = "Jewelry",
-                    Price = 799,
-                    Seller = "Meera",
-                    Status = "Pending"
+                    Price = 900,
+                    Seller = "Meera Joshi",
+                    Status = "Active"
                 }
             };
 
+
             gvProducts.DataSource = products;
+
             gvProducts.DataBind();
         }
+
 
         protected void btnAddProduct_Click(object sender, EventArgs e)
         {
             Response.Redirect("Admin_add_product.aspx");
         }
 
-        protected void gvProducts_RowCommand(object sender, GridViewCommandEventArgs e)
+
+        protected void gvProducts_RowCommand(
+            object sender,
+            GridViewCommandEventArgs e)
         {
             if (e.CommandName == "ViewProduct")
             {
                 int productId = Convert.ToInt32(e.CommandArgument);
 
-                // View product logic later
+                // View product functionality will be added later.
             }
+
 
             if (e.CommandName == "DeleteProduct")
             {
                 int productId = Convert.ToInt32(e.CommandArgument);
 
-                // Delete product logic later
+                // Delete product functionality will be added later.
             }
         }
     }

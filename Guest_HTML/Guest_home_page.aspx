@@ -75,8 +75,7 @@
             <h3>Skill Development</h3>
 
             <p>
-                Learn computer, crafts,
-                marketing &amp; more.
+                Learn computer, crafts marketing &amp; more.
             </p>
 
         </div>

@@ -3,7 +3,8 @@
     MasterPageFile="~/Guest_HTML/Guest_Master_Page.Master"
     AutoEventWireup="true"
     CodeBehind="Contact_Us.aspx.cs"
-    Inherits="Empower_Her_1.Contact_Us" %>
+    Inherits="Empower_Her_1.Contact_Us"
+    UnobtrusiveValidationMode="None" %>
 
 <asp:Content ID="Content1"
     ContentPlaceHolderID="head"
@@ -126,13 +127,14 @@
                 <div class="form-group">
 
                     <label>Your Name</label>
-
+                    
                     <asp:TextBox
                         ID="txtName"
                         runat="server"
                         CssClass="contact-input"
-                        placeholder="Enter your name">
-                    </asp:TextBox>
+                        placeholder="Enter your name"></asp:TextBox>
+
+                    <asp:RequiredFieldValidator ID="NAMETXT0" runat="server" ControlToValidate="txtName" ErrorMessage="please enter your good name" ForeColor="#FF3300">*Name is required</asp:RequiredFieldValidator>
 
                 </div>
 
@@ -148,6 +150,12 @@
                         placeholder="Enter your email">
                     </asp:TextBox>
 
+                    <asp:RequiredFieldValidator ID="EMAILTXT" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required" ForeColor="#FF3300">*Email is required</asp:RequiredFieldValidator>
+
+                    <label>
+                    <asp:RegularExpressionValidator ID="EMAILTXT2" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please eenter a valid email address." ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*Please enter a valid email</asp:RegularExpressionValidator>
+                    </label>
+
                 </div>
 
 
@@ -161,6 +169,10 @@
                         CssClass="contact-input"
                         placeholder="Enter your subject">
                     </asp:TextBox>
+
+                    <label>
+                    <asp:RequiredFieldValidator ID="SUBTXT" runat="server" ControlToValidate="txtSubject" ErrorMessage="Subject is required" ForeColor="#FF3300">*Subject is required</asp:RequiredFieldValidator>
+                    </label>
 
                 </div>
 
@@ -177,14 +189,23 @@
                         placeholder="Enter your message">
                     </asp:TextBox>
 
+                    <asp:RequiredFieldValidator ID="MESSAGETXT" runat="server" ControlToValidate="txtMessage" ErrorMessage="Message is required" ForeColor="#FF3300">*Message is required</asp:RequiredFieldValidator>
+
                 </div>
 
 
-                <asp:Button
-                    ID="btnSendMessage"
-                    runat="server"
-                    Text="➤  Send Message"
-                    CssClass="send-message-button" />
+<asp:Label
+    ID="lblSuccessMessage"
+    runat="server"
+    CssClass="success-message">
+</asp:Label>
+
+<asp:Button
+    ID="btnSendMessage"
+    runat="server"
+    Text="➤  Send Message"
+    CssClass="send-message-button"
+    OnClick="btnSendMessage_Click" />
 
             </div>
 

@@ -53,19 +53,19 @@
 
                 <div class="about-buttons">
 
-                    <asp:Button
-                        ID="btnRegister"
-                        runat="server"
-                        Text="Register"
-                        CssClass="about-primary-button" />
+    <asp:Button ID="btnRegister"
+        runat="server"
+        Text="Register"
+        CssClass="about-primary-button"
+        PostBackUrl="~/Guest_HTML/Register.aspx" />
 
-                    <asp:Button
-                        ID="btnContact"
-                        runat="server"
-                        Text="Contact us"
-                        CssClass="about-primary-button" />
+    <asp:Button ID="btnContact"
+        runat="server"
+        Text="Contact us"
+        CssClass="about-primary-button"
+        PostBackUrl="~/Guest_HTML/Contact_Us.aspx" />
 
-                </div>
+</div>
 
             </div>
 

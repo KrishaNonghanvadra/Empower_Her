@@ -37,19 +37,19 @@
 
             <div class="hero-buttons">
 
-                <asp:Button
-                    ID="btnGetStarted"
-                    runat="server"
-                    Text="Get Started"
-                    CssClass="btn-primary" />
+    <asp:Button ID="btnGetStarted"
+        runat="server"
+        Text="Get Started"
+        CssClass="btn-primary"
+        PostBackUrl="~/Guest_HTML/Register.aspx" />
 
-                <asp:Button
-                    ID="btnLearnMore"
-                    runat="server"
-                    Text="Learn More"
-                    CssClass="btn-secondary" />
+    <asp:Button ID="btnLearnMore"
+        runat="server"
+        Text="Learn More"
+        CssClass="btn-secondary"
+        PostBackUrl="~/Guest_HTML/About_Us.aspx" />
 
-            </div>
+</div>
 
         </div>
 

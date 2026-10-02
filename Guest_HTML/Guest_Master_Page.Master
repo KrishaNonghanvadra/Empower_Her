@@ -59,27 +59,27 @@
                     Home
                 </a>
 
-                <a href="#">
+                <a href="About_Us.aspx">
                     About Us
                 </a>
 
-                <a href="#">
+                <a href="Features.aspx">
                     Features
                 </a>
 
-                <a href="#">
+                <a href="Government_Schemes.aspx">
                     Schemes
                 </a>
 
-                <a href="#">
+                <a href="Testimonials.aspx">
                     Testimonials
                 </a>
 
-                <a href="#" class="login-btn">
+                <a href="Login.aspx" class="login-btn">
                     Login
                 </a>
 
-                <a href="#" class="register-btn">
+                <a href="Register.aspx" class="register-btn">
                     Register
                 </a>
 
@@ -101,7 +101,7 @@
 
 
         <!-- ================= FOOTER ================= -->
-        <footer class="site-footer">
+<footer class="site-footer">
 
     <div class="footer-content">
 
@@ -124,10 +124,16 @@
             <h3>Quick Links</h3>
 
             <a href="Guest_home_page.aspx">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Features</a>
-            <a href="#">Schemes</a>
-            <a href="#">Testimonials</a>
+
+            <a href="About_Us.aspx">About Us</a>
+
+            <a href="Features.aspx">Features</a>
+
+            <a href="Government_Schemes.aspx">Schemes</a>
+
+            <a href="Testimonials.aspx">Testimonials</a>
+
+
 
         </div>
 
@@ -136,8 +142,9 @@
 
             <h3>Account</h3>
 
-            <a href="#">Login</a>
-            <a href="#">Register</a>
+            <a href="Login.aspx">Login</a>
+
+            <a href="Register.aspx">Register</a>
 
         </div>
 
@@ -147,7 +154,13 @@
             <h3>Contact Us</h3>
 
             <p>Email: empowerher@gmail.com</p>
+
             <p>Phone: +91 XXXXX XXXXX</p>
+
+             <div class="footer-links">
+
+            <a href="Contact_Us.aspx">Contact us from Here!</a>
+                  </div>
 
         </div>
 

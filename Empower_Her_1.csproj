@@ -92,6 +92,7 @@
     <Content Include="Guest_CSS\guest_header_css.css" />
     <Content Include="Guest_CSS\guest_home_css.css" />
     <Content Include="Guest_CSS\login_css.css" />
+    <Content Include="Guest_CSS\register_css.css" />
     <Content Include="Guest_CSS\Testimonials_css.css" />
     <Content Include="Guest_HTML\About_Us.aspx" />
     <Content Include="Guest_HTML\Contact_Us.aspx" />
@@ -118,6 +119,7 @@
     <Content Include="Guest_HTML\images\P.svg" />
     <Content Include="Guest_HTML\images\tdesign_money.png" />
     <Content Include="Guest_HTML\Login.aspx" />
+    <Content Include="Guest_HTML\Register.aspx" />
     <Content Include="Guest_HTML\Testimonials.aspx" />
     <Content Include="User_CSS\User_Change_Password.css" />
     <Content Include="User_CSS\User_Courses.css" />
@@ -228,6 +230,13 @@
     </Compile>
     <Compile Include="Guest_HTML\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Guest_HTML\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Guest_HTML\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Guest_HTML\Testimonials.aspx.cs">
       <DependentUpon>Testimonials.aspx</DependentUpon>

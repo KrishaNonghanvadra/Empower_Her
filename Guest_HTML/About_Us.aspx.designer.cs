@@ -11,25 +11,25 @@ namespace Empower_Her_1
 {
 
 
-    public partial class WebForm1
+    public partial class About_Us
     {
 
         /// <summary>
-        /// btnGetStarted control.
+        /// btnRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGetStarted;
+        protected global::System.Web.UI.WebControls.Button btnRegister;
 
         /// <summary>
-        /// btnLearnMore control.
+        /// btnContact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLearnMore;
+        protected global::System.Web.UI.WebControls.Button btnContact;
     }
 }

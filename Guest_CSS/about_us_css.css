@@ -1,0 +1,187 @@
+﻿/* ========================================
+   ABOUT US PAGE
+   ======================================== */
+
+.about-page {
+    background-color: #ffffff;
+    padding: 30px 55px 45px 55px;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   INTRO SECTION
+   ======================================== */
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    max-width: 1100px;
+    margin: 0 auto 25px auto;
+}
+
+
+/* ========================================
+   LEFT CONTENT
+   ======================================== */
+
+.about-content {
+    width: 45%;
+}
+
+    .about-content h1 {
+        margin: 0 0 15px 0;
+        font-size: 34px;
+        color: #ed1760;
+        font-weight: 700;
+    }
+
+    .about-content h2 {
+        margin: 0 0 14px 0;
+        font-size: 17px;
+        line-height: 1.35;
+        color: #35206b;
+        font-weight: 700;
+    }
+
+    .about-content p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333333;
+    }
+
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.about-buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.about-primary-button {
+    background-color: #ed1760;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    .about-primary-button:hover {
+        background-color: #d91455;
+    }
+
+
+/* ========================================
+   IMAGE
+   ======================================== */
+
+.about-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+    .about-image img {
+        width: 100%;
+        max-width: 430px;
+        border-radius: 8px;
+        display: block;
+    }
+
+
+/* ========================================
+   FEATURE CARDS
+   ======================================== */
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-feature-card {
+    background-color: #fdf0f6;
+    border: 1px solid #efb6cf;
+    border-radius: 8px;
+    min-height: 95px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+}
+
+.about-feature-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.about-feature-card h3 {
+    margin: 0 0 7px 0;
+    font-size: 12px;
+    color: #222222;
+    font-weight: 700;
+}
+
+.about-feature-card p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.35;
+    color: #555555;
+}
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .about-intro {
+        flex-direction: column;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .about-page {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-buttons {
+        gap: 15px;
+    }
+}

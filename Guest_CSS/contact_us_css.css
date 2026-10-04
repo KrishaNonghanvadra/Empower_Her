@@ -1,0 +1,306 @@
+﻿/* =========================
+   CONTACT PAGE
+   ========================= */
+
+.contact-page {
+    background-color: #fcf1f8;
+    min-height: 650px;
+    padding: 45px 55px 65px 55px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.contact-container {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 570px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   LEFT SIDE
+   ========================= */
+
+.contact-information {
+    padding: 15px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    /* =========================
+   HEADING
+   ========================= */
+
+    .contact-information h1 {
+        margin: 0;
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #35206b;
+    }
+
+        .contact-information h1 span {
+            color: #ed1760;
+        }
+
+
+/* =========================
+   INTRO TEXT
+   ========================= */
+
+.contact-intro {
+    margin: 10px 0 30px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444444;
+}
+
+
+/* =========================
+   CONTACT INFORMATION ITEM
+   ========================= */
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   CONTACT ICON
+   ========================= */
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #ed1760;
+    font-size: 24px;
+}
+
+
+/* =========================
+   CONTACT DETAILS
+   ========================= */
+
+.contact-details {
+    padding-top: 2px;
+}
+
+    .contact-details h3 {
+        margin: 0 0 5px 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #222222;
+    }
+
+    .contact-details p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #444444;
+    }
+
+    .contact-details strong {
+        font-weight: 700;
+        color: #222222;
+    }
+
+
+/* =========================
+   GIRL IMAGE
+   ========================= */
+
+.contact-image {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+    .contact-image img {
+        width: 260px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+/* =========================
+   RIGHT SIDE FORM
+   ========================= */
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 32px 35px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* =========================
+   FORM GROUP
+   ========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+    /* =========================
+   LABEL
+   ========================= */
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #222222;
+    }
+
+
+/* =========================
+   TEXT INPUT
+   ========================= */
+
+.contact-input {
+    width: 100%;
+    height: 45px;
+    padding: 0 14px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+}
+
+    .contact-input:focus {
+        border-color: #ed1760;
+    }
+
+
+/* =========================
+   MESSAGE BOX
+   ========================= */
+
+.contact-message {
+    width: 100%;
+    height: 110px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    resize: none;
+    outline: none;
+}
+
+    .contact-message:focus {
+        border-color: #ed1760;
+    }
+
+
+/* =========================
+   SEND BUTTON
+   ========================= */
+
+.send-message-button {
+    width: 100%;
+    height: 48px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #ed1760;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+    .send-message-button:hover {
+        background-color: #d91455;
+    }
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-information {
+        min-height: 500px;
+    }
+
+    .contact-form {
+        min-height: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-page {
+        padding: 35px 20px 50px 20px;
+    }
+
+    .contact-information h1 {
+        font-size: 32px;
+    }
+
+    .contact-intro {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-image img {
+        width: 220px;
+    }
+}
+.success-message {
+    display: block;
+    margin-bottom: 15px;
+    color: #16a34a;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}

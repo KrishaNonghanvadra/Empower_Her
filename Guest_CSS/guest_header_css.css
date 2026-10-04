@@ -1,3 +1,235 @@
-﻿body {
-    padding: abs()
+﻿/* =========================================================
+   EMPOWERHER
+   GUEST HEADER / NAVBAR / FOOTER
+   ========================================================= */
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #111111;
+    background-color: #ffffff;
 }
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+    /* Actual Figma logo icon */
+
+    .logo img {
+        width: 43px;
+        height: 43px;
+        object-fit: contain;
+    }
+
+
+    /* EmpowerHer text */
+
+    .logo span {
+        font-size: 25px;
+        font-weight: 700;
+        color: #ed1760;
+        line-height: 1;
+    }
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+    /* Normal links */
+
+    .nav-links a {
+        text-decoration: none;
+        color: #111111;
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+
+        /* Hover */
+
+        .nav-links a:hover {
+            color: #ed1760;
+        }
+
+
+    /* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+    .nav-links .login-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 68px;
+        height: 25px;
+        padding: 0 12px;
+        box-sizing: border-box;
+        border: 1px solid #ed1760;
+        border-radius: 6px;
+        background-color: #ffffff;
+        color: #ed1760;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+
+        /* Login hover */
+
+        .nav-links .login-btn:hover {
+            background-color: #fff2f6;
+            color: #ed1760;
+        }
+
+
+    /* =========================================================
+   REGISTER BUTTON
+   ========================================================= */
+
+    .nav-links .register-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 75px;
+        height: 25px;
+        padding: 0 13px;
+        box-sizing: border-box;
+        border: 1px solid #ed1760;
+        border-radius: 6px;
+        background-color: #ed1760;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+
+        /* Register hover */
+
+        .nav-links .register-btn:hover {
+            background-color: #d91455;
+            color: #ffffff;
+        }
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+main {
+    min-height: 500px;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.site-footer {
+    background-color: #35206b;
+    color: white;
+    margin-top: 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding: 45px 70px;
+}
+
+.footer-brand {
+    max-width: 320px;
+}
+
+.footer-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-brand h2 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .footer-links a:hover {
+            color: #ed1760;
+        }
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+    padding: 15px;
+}
+
+    .footer-bottom p {
+        margin: 0;
+        font-size: 13px;
+    }

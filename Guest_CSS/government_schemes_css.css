@@ -1,0 +1,242 @@
+﻿/* ========================================
+   GOVERNMENT SCHEMES PAGE
+   ======================================== */
+
+.schemes-page {
+    background-color: #fcf1f8;
+    min-height: 650px;
+    padding: 38px 55px 55px 55px;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   HEADING
+   ======================================== */
+
+.schemes-heading {
+    margin-bottom: 20px;
+}
+
+    .schemes-heading h1 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #35206b;
+    }
+
+        .schemes-heading h1 span {
+            color: #ed1760;
+        }
+
+    .schemes-heading p {
+        margin: 8px 0 0 0;
+        font-size: 15px;
+        color: #333333;
+    }
+
+
+/* ========================================
+   SEARCH + CATEGORY
+   ======================================== */
+
+.scheme-filter {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 28px;
+}
+
+
+/* Search */
+
+.search-area {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    padding-left: 15px;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #888888;
+    margin-right: 9px;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 13px;
+    color: #333333;
+}
+
+
+/* Category dropdown */
+
+.category-dropdown {
+    width: 170px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #444444;
+    font-size: 13px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   SCHEME GRID
+   ======================================== */
+
+.schemes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px 28px;
+    width: 100%;
+}
+
+
+/* ========================================
+   SCHEME CARD
+   ======================================== */
+
+.scheme-card {
+    background-color: white;
+    min-height: 145px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .scheme-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.14);
+    }
+
+
+/* ========================================
+   ICON
+   ======================================== */
+
+.scheme-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    font-size: 22px;
+}
+
+
+/* Icon backgrounds */
+
+.mudra-icon {
+    background-color: #ffe6d5;
+    color: #e87517;
+}
+
+.skill-icon {
+    background-color: #e5efff;
+    color: #477bd4;
+}
+
+.standup-icon {
+    background-color: #f8e2f1;
+    color: #d85a9c;
+}
+
+.ehaat-icon {
+    background-color: #ffe8e8;
+    color: #e23e59;
+}
+
+.beti-icon {
+    background-color: #fff1cf;
+    color: #d69200;
+}
+
+.nrlm-icon {
+    background-color: #ddf4e5;
+    color: #43a66a;
+}
+
+
+/* ========================================
+   CARD CONTENT
+   ======================================== */
+
+.scheme-content {
+    flex: 1;
+}
+
+    .scheme-content h3 {
+        margin: 2px 0 8px 0;
+        font-size: 14px;
+        line-height: 1.25;
+        font-weight: 700;
+        color: #222222;
+    }
+
+    .scheme-content p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #666666;
+    }
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .schemes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .schemes-page {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .schemes-heading h1 {
+        font-size: 28px;
+    }
+
+    .scheme-filter {
+        height: auto;
+        min-height: 45px;
+    }
+
+    .category-dropdown {
+        width: 140px;
+    }
+
+    .schemes-grid {
+        grid-template-columns: 1fr;
+    }
+}

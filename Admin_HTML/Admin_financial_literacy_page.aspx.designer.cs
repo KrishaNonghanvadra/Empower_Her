@@ -7,29 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Empower_Her_1
+namespace Empower_Her_1.Admin_HTML
 {
 
 
-    public partial class WebForm1
+    public partial class Admin_financial_literacy_page
     {
 
         /// <summary>
-        /// btnGetStarted control.
+        /// btnAddTopic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGetStarted;
+        protected global::System.Web.UI.WebControls.Button btnAddTopic;
 
         /// <summary>
-        /// btnLearnMore control.
+        /// txtSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLearnMore;
+        protected global::System.Web.UI.WebControls.TextBox txtSearch;
+
+        /// <summary>
+        /// gvTopics control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvTopics;
     }
 }

@@ -101,13 +101,13 @@
                 <div class="course-card">
 
                     <img
-                        src="../Images/computer-course.jpg"
-                        alt="Computer Skills" />
+                        src="../User_Images/user_cources2.jpg.png"
+                        alt="Handcraft Tutorial" />
 
                     <div class="course-info">
 
                         <h3>
-                            Computer skills
+                            handcraft 
                         </h3>
 
                         <p class="youtube-title">
@@ -133,13 +133,13 @@
                 <div class="course-card">
 
                     <img
-                        src="../Images/computer-course.jpg"
+                        src="../User_Images/user_cources3.jpg.png"
                         alt="Computer Skills" />
 
                     <div class="course-info">
 
                         <h3>
-                            Computer skills
+                            Candle Making 
                         </h3>
 
                         <p class="youtube-title">
@@ -165,13 +165,13 @@
                 <div class="course-card">
 
                     <img
-                        src="../Images/computer-course.jpg"
+                        src="../User_Images/user_cources4.jpg.png"
                         alt="Computer Skills" />
 
                     <div class="course-info">
 
                         <h3>
-                            Computer skills
+                            Wall Hangings
                         </h3>
 
                         <p class="youtube-title">
@@ -197,13 +197,13 @@
                 <div class="course-card">
 
                     <img
-                        src="../Images/computer-course.jpg"
+                        src="../User_Images/user_cources5.jpg.png"
                         alt="Computer Skills" />
 
                     <div class="course-info">
 
                         <h3>
-                            Computer skills
+                            Embroidery Craft
                         </h3>
 
                         <p class="youtube-title">
@@ -229,13 +229,13 @@
                 <div class="course-card">
 
                     <img
-                        src="../Images/computer-course.jpg"
+                        src="../User_Images/user_cources6.jpg.png"
                         alt="Computer Skills" />
 
                     <div class="course-info">
 
                         <h3>
-                            Computer skills
+                            Online Sell skills
                         </h3>
 
                         <p class="youtube-title">

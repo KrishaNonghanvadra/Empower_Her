@@ -98,6 +98,11 @@
     <Content Include="User_HTML\User_Notifications.aspx" />
     <Content Include="User_HTML\WebForm1.aspx" />
     <Content Include="User_Images\courses_image1.jpg.png" />
+    <Content Include="User_Images\user_cources2.jpg.png" />
+    <Content Include="User_Images\user_cources3.jpg.png" />
+    <Content Include="User_Images\user_cources4.jpg.png" />
+    <Content Include="User_Images\user_cources5.jpg.png" />
+    <Content Include="User_Images\user_cources6.jpg.png" />
     <Content Include="Web.config" />
     <Content Include="Guest_HTML\Guest_home_page.aspx" />
   </ItemGroup>

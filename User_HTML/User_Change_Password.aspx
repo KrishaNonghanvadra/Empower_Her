@@ -115,7 +115,7 @@
             <div class="password-image">
 
                 <img
-                    src="../Images/change-password.png"
+                    src="../User_Images/lock.png"
                     alt="Change Password" />
 
             </div>

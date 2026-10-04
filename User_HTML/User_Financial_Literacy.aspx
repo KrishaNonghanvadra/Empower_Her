@@ -152,7 +152,7 @@
                     <div class="recommended-image">
 
                         <img
-                            src="../Images/save-money.jpg"
+                            src="../User_Images/user_financial1.png"
                             alt="How to Save Money Daily" />
 
                     </div>
@@ -180,7 +180,7 @@
                     <div class="recommended-image">
 
                         <img
-                            src="../Images/bank-account.jpg"
+                            src="../User_Images/user_financial2.png"
                             alt="Understanding Bank Accounts" />
 
                     </div>

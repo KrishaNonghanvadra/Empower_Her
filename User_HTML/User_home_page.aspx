@@ -1,36 +1,35 @@
-﻿<%@ Page Title="Dashboard"
-    Language="C#"
+﻿<%@ Page 
+    Language="C#" 
+    AutoEventWireup="true" 
+    CodeBehind="User_home_page.aspx.cs" 
+    Inherits="Empower_Her_1.User_HTML.User_home_page"
     MasterPageFile="~/User_HTML/User_Master_Page.Master"
-    AutoEventWireup="true"
-    CodeBehind="User_home_page.aspx.cs"
-    Inherits="Empower_Her_1.User_HTML.User_home_page" %>
+%>
 
 
-<!-- PAGE CSS -->
-<asp:Content
+<asp:Content 
     ID="Content1"
     ContentPlaceHolderID="head"
     runat="server">
 
-    <link href="<%= ResolveUrl("~/User_CSS/User_home_page.css") %>"
+    <link href="<%= ResolveUrl("~/User_Css/User_home_page.css") %>"
           rel="stylesheet" />
 
 </asp:Content>
 
 
-<!-- PAGE BODY -->
-<asp:Content
+<asp:Content 
     ID="Content2"
     ContentPlaceHolderID="ContentPlaceHolder1"
     runat="server">
 
     <div class="dashboard">
 
-        <!-- Dashboard Title -->
+        <!-- TITLE -->
         <h1>Dashboard</h1>
 
 
-        <!-- Welcome Section -->
+        <!-- WELCOME BOX -->
         <div class="welcome-box">
 
             <div class="welcome-text">
@@ -50,7 +49,7 @@
 
             <div class="welcome-image">
 
-                <img src="../Images/dashboard-welcome.png"
+                <img src="../User_Images/girl.png"
                      alt="Welcome" />
 
             </div>
@@ -58,18 +57,15 @@
         </div>
 
 
-        <!-- Statistics -->
+        <!-- STATISTICS -->
         <div class="dashboard-stats">
 
-            <!-- My Learning -->
             <div class="stat-card">
 
                 <h3>My Learning</h3>
 
                 <div class="stat-number">
                     5
-
-                    <span class="stat-icon">📖</span>
                 </div>
 
                 <p>Courses Enrolled</p>
@@ -77,15 +73,12 @@
             </div>
 
 
-            <!-- Products -->
             <div class="stat-card">
 
                 <h3>Products</h3>
 
                 <div class="stat-number">
                     6
-
-                    <span class="stat-icon">📖</span>
                 </div>
 
                 <p>Products Listed</p>
@@ -93,15 +86,12 @@
             </div>
 
 
-            <!-- Schemes -->
             <div class="stat-card">
 
                 <h3>Schemes</h3>
 
                 <div class="stat-number">
                     4
-
-                    <span class="stat-icon">🏛</span>
                 </div>
 
                 <p>Schemes Available</p>
@@ -109,15 +99,12 @@
             </div>
 
 
-            <!-- Courses -->
             <div class="stat-card">
 
                 <h3>Courses</h3>
 
                 <div class="stat-number">
                     6
-
-                    <span class="stat-icon">📖</span>
                 </div>
 
                 <p>Courses Available</p>
@@ -127,18 +114,18 @@
         </div>
 
 
-        <!-- Bottom Section -->
+        <!-- BOTTOM SECTION -->
         <div class="dashboard-bottom">
 
 
-            <!-- Continue Learning -->
+            <!-- CONTINUE LEARNING -->
             <div class="continue-learning">
 
                 <h2>Continue Learning</h2>
 
                 <div class="learning-card">
 
-                    <img src="../Images/embroidery.jpg"
+                    <img src="../User_Images/User_cources5.jpg.png"
                          alt="Embroidery Basics" />
 
                     <div class="learning-info">
@@ -150,25 +137,27 @@
                             Step by step
                         </p>
 
-                    </div>
+                        <button type="button">
+                            Continue
+                        </button>
 
-                    <button type="button">
-                        Continue
-                    </button>
+                    </div>
 
                 </div>
 
             </div>
 
 
-            <!-- Recent Notifications -->
+            <!-- RECENT NOTIFICATIONS -->
             <div class="recent-notifications">
 
                 <div class="notification-title">
 
                     <h2>Recent Notifications</h2>
 
-                    <a href="#">View All</a>
+                    <a href="#">
+                        View All
+                    </a>
 
                 </div>
 
@@ -179,7 +168,9 @@
                         New scheme “PM Mudra Loan” added
                     </p>
 
-                    <span>2 hours ago</span>
+                    <small>
+                        2 hours ago
+                    </small>
 
                 </div>
 
@@ -190,7 +181,9 @@
                         Your product “Handmade Bag” is approved
                     </p>
 
-                    <span>1 day ago</span>
+                    <small>
+                        1 day ago
+                    </small>
 
                 </div>
 
@@ -201,7 +194,9 @@
                         New course “Digital Marketing Basics” added
                     </p>
 
-                    <span>2 days ago</span>
+                    <small>
+                        2 days ago
+                    </small>
 
                 </div>
 

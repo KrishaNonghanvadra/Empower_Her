@@ -11,7 +11,7 @@
     ContentPlaceHolderID="head"
     runat="server">
 
-    <link href="<%= ResolveUrl("~/User_Css/User_My_Profile.css") %>"
+    <link href="<%= ResolveUrl("~/User_CSS/User_My_Profile.css") %>"
         rel="stylesheet" />
 
 </asp:Content>
@@ -52,7 +52,7 @@
                 <div class="profile-photo">
 
                     <img
-                        src="../Images/profile.jpg"
+                        src="../User_Images/user_profile.png"
                         alt="Krisha Patel" />
 
                 </div>

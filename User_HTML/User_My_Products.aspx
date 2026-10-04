@@ -56,7 +56,7 @@
 
             <div class="product-card">
 
-                <img src="../Images/handmade-bag.jpg"
+                <img src="../User_Images/user_product1.png"
                     alt="Handmade Bag" />
 
                 <div class="product-info">
@@ -72,7 +72,7 @@
 
             <div class="product-card">
 
-                <img src="../Images/embroidery-frame.jpg"
+                <img src="../User_Images/user_product2.png"
                     alt="Embroidery Frame" />
 
                 <div class="product-info">
@@ -88,7 +88,7 @@
 
             <div class="product-card">
 
-                <img src="../Images/decorative-candle.jpg"
+                <img src="../User_Images/user_product3.png"
                     alt="Decorative Candle" />
 
                 <div class="product-info">
@@ -104,7 +104,7 @@
 
             <div class="product-card">
 
-                <img src="../Images/crochet-basket.jpg"
+                <img src="../User_Images/user_product4.png"
                     alt="Crochet Basket" />
 
                 <div class="product-info">
@@ -120,7 +120,7 @@
 
             <div class="product-card">
 
-                <img src="../Images/wall-hanging.jpg"
+                <img src="../User_Images/user_product5.png"
                     alt="Wall Hanging" />
 
                 <div class="product-info">
@@ -136,7 +136,7 @@
 
             <div class="product-card">
 
-                <img src="../Images/jute-handbag.jpg"
+                <img src="../User_Images/user_product6.png"
                     alt="Jute Handbag" />
 
                 <div class="product-info">

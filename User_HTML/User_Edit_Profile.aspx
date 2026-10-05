@@ -61,7 +61,7 @@
 
                     <input
                         type="text"
-                        value="Krisha patel" />
+                        value="Krisha patel" id="name" aria-orientation="vertical" />
 
                 </div>
 
@@ -196,7 +196,8 @@
 
                 <button
                     type="button"
-                    class="save-btn">
+                    class="save-btn"
+                    onclick="window.location.href='User_My_Profile.aspx';">
 
                     Save Changes
 

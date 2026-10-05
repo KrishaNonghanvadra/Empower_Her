@@ -56,7 +56,7 @@
 
             <!-- Notification -->
 
-            <a href="#" class="notification">
+            <a href="User_Notifications.aspx" class="notification">
 
                 🔔
 
@@ -224,7 +224,7 @@
 
         <!-- Logout -->
 
-        <a href="#"
+        <a href="User_home_page.aspx"
            class="sidebar-link logout-link">
 
             <span class="sidebar-icon">

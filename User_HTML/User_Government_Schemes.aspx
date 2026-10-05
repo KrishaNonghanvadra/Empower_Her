@@ -50,7 +50,7 @@
                 <div class="scheme-image">
 
                     <img
-                        src="../Images/mudra-loan.png"
+                        src="../User_Images/pmloan.png"
                         alt="PM Mudra Loan" />
 
                 </div>
@@ -78,7 +78,7 @@
                 <div class="scheme-image">
 
                     <img
-                        src="../Images/mudra-loan.png"
+                        src="../User_Images/pmloan.png"
                         alt="PM Mudra Loan" />
 
                 </div>
@@ -106,7 +106,7 @@
                 <div class="scheme-image">
 
                     <img
-                        src="../Images/mudra-loan.png"
+                        src="../User_Images/pmloan.png"
                         alt="PM Mudra Loan" />
 
                 </div>
@@ -134,7 +134,7 @@
                 <div class="scheme-image">
 
                     <img
-                        src="../Images/mudra-loan.png"
+                        src="../User_Images/pmloan.png"
                         alt="PM Mudra Loan" />
 
                 </div>

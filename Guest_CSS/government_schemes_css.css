@@ -1,29 +1,30 @@
 ﻿/* ========================================
    GOVERNMENT SCHEMES PAGE
-   ======================================== */
+======================================== */
 
 .schemes-page {
-    background-color: #fcf1f8;
-    min-height: 650px;
-    padding: 38px 55px 55px 55px;
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px 20px 30px 20px;
     box-sizing: border-box;
 }
 
 
 /* ========================================
-   HEADING
-   ======================================== */
+   PAGE HEADING
+======================================== */
 
 .schemes-heading {
-    margin-bottom: 20px;
+    margin: 0 0 18px 0;
 }
 
     .schemes-heading h1 {
-        margin: 0;
-        font-size: 34px;
+        margin: 0 0 4px 0;
+        font-size: 27px;
         line-height: 1.2;
-        font-weight: 700;
-        color: #35206b;
+        font-weight: 600;
+        color: #111111;
     }
 
         .schemes-heading h1 span {
@@ -31,43 +32,46 @@
         }
 
     .schemes-heading p {
-        margin: 8px 0 0 0;
-        font-size: 15px;
-        color: #333333;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.4;
+        color: #222222;
     }
 
 
 /* ========================================
-   SEARCH + CATEGORY
-   ======================================== */
+   SEARCH BOX
+======================================== */
 
 .scheme-filter {
     width: 100%;
-    height: 45px;
-    background-color: white;
-    border: 1px solid #d9d9d9;
-    border-radius: 7px;
+    height: 39px;
+    background-color: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     box-sizing: border-box;
-    margin-bottom: 28px;
+    margin-bottom: 14px;
 }
 
 
-/* Search */
+/* ========================================
+   SEARCH AREA
+======================================== */
 
 .search-area {
     display: flex;
     align-items: center;
+    width: 100%;
     height: 100%;
-    flex: 1;
-    padding-left: 15px;
+    padding-left: 12px;
+    box-sizing: border-box;
 }
 
 .search-icon {
     font-size: 18px;
-    color: #888888;
+    color: #333333;
     margin-right: 9px;
 }
 
@@ -77,79 +81,95 @@
     border: none;
     outline: none;
     background-color: transparent;
-    font-size: 13px;
+    padding: 0 5px;
+    font-size: 12px;
     color: #333333;
+    box-sizing: border-box;
 }
 
+    .search-input::placeholder {
+        color: #555555;
+    }
 
-/* Category dropdown */
+
+/* ========================================
+   CATEGORY DROPDOWN
+======================================== */
 
 .category-dropdown {
-    width: 170px;
+    width: 150px;
     height: 100%;
     border: none;
     outline: none;
-    background-color: white;
+    background-color: #ffffff;
     color: #444444;
-    font-size: 13px;
-    padding: 0 10px;
+    font-size: 12px;
+    padding: 0 8px;
     cursor: pointer;
 }
 
 
 /* ========================================
-   SCHEME GRID
-   ======================================== */
+   SCHEMES GRID
+======================================== */
 
 .schemes-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px 28px;
+    grid-template-columns: 1fr;
+    gap: 10px;
     width: 100%;
 }
 
 
 /* ========================================
    SCHEME CARD
-   ======================================== */
+======================================== */
 
 .scheme-card {
-    background-color: white;
-    min-height: 145px;
-    border-radius: 10px;
-    border: 1px solid #eeeeee;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+    width: 100%;
+    min-height: 82px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    box-shadow: none;
     display: flex;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
+    padding: 10px 14px;
     box-sizing: border-box;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: 0.2s;
 }
 
+
+    /* ========================================
+   CARD HOVER
+======================================== */
+
     .scheme-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.14);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
     }
 
 
 /* ========================================
-   ICON
-   ======================================== */
+   SCHEME ICON / IMAGE
+======================================== */
 
 .scheme-icon {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 14px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
-/* Icon backgrounds */
+/* ========================================
+   ICON BACKGROUNDS
+======================================== */
 
 .mudra-icon {
     background-color: #ffe6d5;
@@ -184,59 +204,107 @@
 
 /* ========================================
    CARD CONTENT
-   ======================================== */
+======================================== */
 
 .scheme-content {
     flex: 1;
+    min-width: 0;
 }
 
     .scheme-content h3 {
-        margin: 2px 0 8px 0;
-        font-size: 14px;
-        line-height: 1.25;
-        font-weight: 700;
-        color: #222222;
+        margin: 0 0 2px 0;
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #111111;
     }
 
     .scheme-content p {
-        margin: 0;
+        margin: 0 0 5px 0;
         font-size: 12px;
-        line-height: 1.5;
-        color: #666666;
+        line-height: 1.3;
+        color: #222222;
+    }
+
+
+    /* ========================================
+   CATEGORY LABEL
+======================================== */
+
+    .scheme-content .category {
+        display: inline-block;
+        background-color: #e8f4fa;
+        color: #333333;
+        padding: 3px 7px;
+        font-size: 9px;
+        line-height: 1;
+        border-radius: 1px;
     }
 
 
 /* ========================================
    RESPONSIVE
-   ======================================== */
+======================================== */
 
-@media (max-width: 900px) {
-
-    .schemes-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     .schemes-page {
-        padding: 30px 20px 40px 20px;
+        padding: 18px 15px 25px 15px;
     }
 
     .schemes-heading h1 {
-        font-size: 28px;
+        font-size: 25px;
+    }
+
+    .schemes-heading p {
+        font-size: 13px;
+    }
+
+    .scheme-card {
+        min-height: 80px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .schemes-page {
+        padding: 15px 10px 20px 10px;
+    }
+
+    .schemes-heading h1 {
+        font-size: 22px;
+    }
+
+    .schemes-heading p {
+        font-size: 12px;
     }
 
     .scheme-filter {
-        height: auto;
-        min-height: 45px;
+        height: 36px;
     }
 
-    .category-dropdown {
-        width: 140px;
+    .search-input {
+        font-size: 11px;
     }
 
-    .schemes-grid {
-        grid-template-columns: 1fr;
+    .scheme-card {
+        min-height: 75px;
+        padding: 8px 10px;
+    }
+
+    .scheme-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        margin-right: 10px;
+    }
+
+    .scheme-content h3 {
+        font-size: 14px;
+    }
+
+    .scheme-content p {
+        font-size: 11px;
     }
 }

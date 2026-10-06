@@ -11,28 +11,23 @@
     ContentPlaceHolderID="head"
     runat="server">
 
-    <link href="<%= ResolveUrl("~/User_Css/User_Change_Password.css") %>"
+    <link href="<%= ResolveUrl("~/User_CSS/User_Change_Password.css") %>"
         rel="stylesheet" />
 
 </asp:Content>
 
 
-<asp:Content
-    ID="Content2"
+<asp:Content ID="Content2"
     ContentPlaceHolderID="ContentPlaceHolder1"
     runat="server">
 
-
     <div class="change-password-page">
 
-
-        <!-- ================= PAGE HEADER ================= -->
+        <!-- PAGE HEADER -->
 
         <div class="change-password-header">
 
-            <h1>
-                Change Password
-            </h1>
+            <h1>Change Password</h1>
 
             <p>
                 Create a new password to secure your account.
@@ -41,26 +36,22 @@
         </div>
 
 
-        <!-- ================= MAIN CONTENT ================= -->
+        <!-- PASSWORD SECTION -->
 
-        <div class="change-password-content">
+        <div class="password-section">
 
+            <!-- PASSWORD FORM -->
 
-            <!-- ================= PASSWORD FORM ================= -->
-
-            <div class="password-card">
-
+            <div class="password-form">
 
                 <!-- Current Password -->
 
-                <div class="password-group">
+                <div class="form-group">
 
-                    <label>
-                        Current Password
-                    </label>
+                    <label>Current Password</label>
 
-                    <input
-                        type="password"
+                    <input type="password"
+                        class="password-input"
                         placeholder="Enter current Password" />
 
                 </div>
@@ -68,14 +59,12 @@
 
                 <!-- New Password -->
 
-                <div class="password-group">
+                <div class="form-group">
 
-                    <label>
-                        New Password
-                    </label>
+                    <label>New Password</label>
 
-                    <input
-                        type="password"
+                    <input type="password"
+                        class="password-input"
                         placeholder="Enter your new password" />
 
                 </div>
@@ -83,48 +72,40 @@
 
                 <!-- Confirm Password -->
 
-                <div class="password-group">
+                <div class="form-group">
 
-                    <label>
-                        Conform new Password
-                    </label>
+                    <label>Confirm new Password</label>
 
-                    <input
-                        type="password"
-                        placeholder="Conform new password" />
+                    <input type="password"
+                        class="password-input"
+                        placeholder="Confirm new password" />
 
                 </div>
 
 
                 <!-- Update Button -->
 
-                <button
-                    type="button"
+                <button type="button"
                     class="update-password-btn">
 
                     Update Password
 
                 </button>
 
-
             </div>
 
 
-            <!-- ================= ILLUSTRATION ================= -->
+            <!-- IMAGE -->
 
             <div class="password-image">
 
-                <img
-                    src="../User_Images/lock.png"
+                <img src="../User_Images/lock.png"
                     alt="Change Password" />
 
             </div>
 
-
         </div>
 
-
     </div>
-
 
 </asp:Content>

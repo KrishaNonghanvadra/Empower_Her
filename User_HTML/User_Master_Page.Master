@@ -40,9 +40,9 @@
 
         <div class="header-logo">
 
-            <div class="logo-icon">
+            <img
                 ♡
-            </div>
+               alt="EmpowerHer Logo" />
 
             <span class="logo-text">EmpowerHer
             </span>

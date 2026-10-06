@@ -40,9 +40,9 @@
 
         <div class="header-logo">
 
-            <img
+            <div class="logo-icon">
                 ♡
-               alt="EmpowerHer Logo" />
+            </div>
 
             <span class="logo-text">EmpowerHer
             </span>
@@ -96,8 +96,9 @@
 
         <!-- Dashboard -->
 
-        <a href="User_home_page.aspx"
-           class="sidebar-link active">
+<a id="lnkDashboard" runat="server"
+   href="User_home_page.aspx"
+   class="sidebar-link">
 
             <span class="sidebar-icon">
                 🏠
@@ -112,8 +113,8 @@
 
         <!-- Products -->
 
-        <a href="User_My_Products.aspx"
-           class="sidebar-link">
+<a id="lnkProducts" runat="server" href="User_My_Products.aspx"
+   class="sidebar-link">
 
             <span class="sidebar-icon">
                 ▣
@@ -128,8 +129,8 @@
 
         <!-- Government Schemes -->
 
-        <a href="User_Government_Schemes.aspx"
-           class="sidebar-link">
+<a id="lnkGovernmentSchemes" runat="server" href="User_Government_Schemes.aspx"
+   class="sidebar-link">
 
             <span class="sidebar-icon">
                 🏛
@@ -144,8 +145,8 @@
 
         <!-- Financial Literacy -->
 
-        <a href="User_Financial_Literacy.aspx"
-           class="sidebar-link">
+<a id="lnkFinancialLiteracy" runat="server" href="User_Financial_Literacy.aspx"
+   class="sidebar-link">
 
             <span class="sidebar-icon">
                 ▣
@@ -160,8 +161,8 @@
 
         <!-- Notifications -->
 
-        <a href="User_Notifications.aspx"
-           class="sidebar-link">
+<a id="lnkNotifications" runat="server" href="User_Notifications.aspx"
+   class="sidebar-link">
 
             <span class="sidebar-icon">
                 ⏱
@@ -176,8 +177,8 @@
 
         <!-- My Profile -->
 
-        <a href="User_My_Profile.aspx"
-           class="sidebar-link">
+<a id="lnkMyProfile" runat="server" href="User_My_Profile.aspx"
+   class="sidebar-link">
 
             <span class="sidebar-icon">
                 ◉
@@ -192,8 +193,8 @@
 
         <!-- Settings -->
 
-        <a href="User_Change_Password.aspx"
-           class="sidebar-link">
+<a id="lnkSettings" runat="server" href="User_Change_Password.aspx"
+   class="sidebar-link">
 
             <span class="sidebar-icon">
                 ⚙
@@ -208,8 +209,8 @@
 
         <!-- Courses -->
 
-        <a href="User_Courses.aspx"
-           class="sidebar-link">
+<a id="lnkCourses" runat="server" href="User_Courses.aspx"
+   class="sidebar-link">
 
             <span class="sidebar-icon">
                 ▣
@@ -224,8 +225,7 @@
 
         <!-- Logout -->
 
-        <a href="User_home_page.aspx"
-           class="sidebar-link logout-link">
+<a href="../Guest_HTML/Login.aspx" class="sidebar-link logout-link">
 
             <span class="sidebar-icon">
                 ⇥

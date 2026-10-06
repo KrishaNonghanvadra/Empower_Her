@@ -30,13 +30,9 @@
                 </p>
             </div>
 
-            <button type="button"
-                class="add-product-btn">
-
-                <span>+</span>
-                Add Product
-
-            </button>
+            <a href="User_Add_Product.aspx" class="add-product-link">
+    + Add Product
+</a>
 
         </div>
 

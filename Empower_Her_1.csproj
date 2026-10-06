@@ -121,6 +121,7 @@
     <Content Include="Guest_HTML\Login.aspx" />
     <Content Include="Guest_HTML\Register.aspx" />
     <Content Include="Guest_HTML\Testimonials.aspx" />
+    <Content Include="User_CSS\User_Add_Product.css" />
     <Content Include="User_CSS\User_Change_Password.css" />
     <Content Include="User_CSS\User_Courses.css" />
     <Content Include="User_CSS\User_Edit_Profile.css" />
@@ -132,6 +133,7 @@
     <Content Include="User_CSS\User_Master_Page1.css" />
     <Content Include="User_CSS\User_My_Profile.css" />
     <Content Include="User_CSS\User_Notifications.css" />
+    <Content Include="User_HTML\User_Add_Product.aspx" />
     <Content Include="User_HTML\User_Change_Password.aspx" />
     <Content Include="User_HTML\User_Courses.aspx" />
     <Content Include="User_HTML\User_Edit_Profile.aspx" />
@@ -144,6 +146,7 @@
     <Content Include="User_HTML\WebForm1.aspx" />
     <Content Include="User_Images\courses_image1.jpg.png" />
     <Content Include="User_Images\girl.png" />
+    <Content Include="User_Images\image 5.png" />
     <Content Include="User_Images\lock.png" />
     <Content Include="User_Images\pmloan.png" />
     <Content Include="User_Images\user_cources2.jpg.png" />
@@ -290,6 +293,13 @@
     </Compile>
     <Compile Include="Guest_HTML\Guest_home_page.aspx.designer.cs">
       <DependentUpon>Guest_home_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_HTML\User_Add_Product.aspx.cs">
+      <DependentUpon>User_Add_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_HTML\User_Add_Product.aspx.designer.cs">
+      <DependentUpon>User_Add_Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_HTML\User_Change_Password.aspx.cs">
       <DependentUpon>User_Change_Password.aspx</DependentUpon>

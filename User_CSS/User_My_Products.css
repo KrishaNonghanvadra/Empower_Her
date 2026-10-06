@@ -33,30 +33,26 @@
     }
 
 
+
+
 /* =========================================
    ADD PRODUCT BUTTON
 ========================================= */
 
-.add-product-btn {
+.add-product-link {
+    display: inline-block;
     background-color: #f52d78;
     color: white;
-    border: none;
-    padding: 9px 15px;
-    border-radius: 6px;
-    font-size: 12px;
-    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-
-    .add-product-btn span {
-        font-size: 20px;
-        vertical-align: middle;
-        margin-right: 4px;
-    }
-
-
-    .add-product-btn:hover {
+    .add-product-link:hover {
         background-color: #d91f66;
+        color: white;
     }
 
 

@@ -11,106 +11,115 @@ namespace Empower_Her_1.User_HTML
 {
 
 
-    public partial class User_Master_Page
+    public partial class User_Add_Product
     {
 
         /// <summary>
-        /// head control.
+        /// lblSuccessMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label lblSuccessMessage;
 
         /// <summary>
-        /// form1 control.
+        /// txtProductName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txtProductName;
 
         /// <summary>
-        /// lnkDashboard control.
+        /// rfvProductName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkDashboard;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProductName;
 
         /// <summary>
-        /// lnkProducts control.
+        /// ddlCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkProducts;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCategory;
 
         /// <summary>
-        /// lnkGovernmentSchemes control.
+        /// rfvCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkGovernmentSchemes;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCategory;
 
         /// <summary>
-        /// lnkFinancialLiteracy control.
+        /// txtPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkFinancialLiteracy;
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
 
         /// <summary>
-        /// lnkNotifications control.
+        /// rfvPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkNotifications;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPrice;
 
         /// <summary>
-        /// lnkMyProfile control.
+        /// revPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkMyProfile;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revPrice;
 
         /// <summary>
-        /// lnkSettings control.
+        /// txtDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkSettings;
+        protected global::System.Web.UI.WebControls.TextBox txtDescription;
 
         /// <summary>
-        /// lnkCourses control.
+        /// rfvDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkCourses;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDescription;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// fuProductImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.FileUpload fuProductImage;
+
+        /// <summary>
+        /// btnAddProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddProduct;
     }
 }

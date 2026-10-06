@@ -65,18 +65,20 @@
    KEEP LEARNING BUTTON
 ========================================= */
 
-    .welcome-text button {
+    .welcome-text .keep-learning-btn {
+        display: inline-block;
         border: none;
-        background: linear-gradient( 90deg, #8b5cf6, #ec4899, #22c55e );
+        background: linear-gradient(90deg, #8b5cf6, #ec4899, #22c55e);
         color: white;
         padding: 7px 18px;
         border-radius: 7px;
         font-size: 13px;
         cursor: pointer;
         box-shadow: 0 3px 8px rgba(0,0,0,0.20);
+        text-decoration: none;
     }
 
-        .welcome-text button:hover {
+        .welcome-text .keep-learning-btn:hover {
             opacity: 0.9;
         }
 
@@ -230,8 +232,10 @@
    CONTINUE BUTTON
 ========================================= */
 
-    .learning-info button {
-        float: right;
+    .learning-info .continue-btn {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
         margin-top: 5px;
         border: none;
         background-color: #f52d78;
@@ -240,6 +244,7 @@
         border-radius: 7px;
         font-size: 12px;
         cursor: pointer;
+        text-decoration: none;
     }
 
         .learning-info button:hover {

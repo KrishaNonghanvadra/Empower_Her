@@ -1,0 +1,221 @@
+﻿/* =========================================
+   ADD PRODUCT PAGE
+========================================= */
+
+.add-product-page {
+    padding: 25px 30px 40px 30px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .page-header h1 {
+        margin: 0 0 5px 0;
+        font-size: 28px;
+        font-weight: 600;
+        color: #111;
+    }
+
+    .page-header p {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+    }
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-btn {
+    background-color: #fff0f5;
+    color: #f52d78;
+    padding: 9px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+    .back-btn:hover {
+        background-color: #f52d78;
+        color: white;
+    }
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.product-form-card {
+    width: 100%;
+    max-width: 850px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+}
+
+    .product-form-card h2 {
+        margin: 0 0 5px 0;
+        font-size: 21px;
+        color: #111;
+    }
+
+.form-description {
+    margin: 0 0 25px 0;
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.success-message {
+    display: block;
+    margin-bottom: 18px;
+    color: #16a34a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #222;
+    }
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+    .form-input:focus {
+        border-color: #f52d78;
+    }
+
+.description-input {
+    resize: vertical;
+}
+
+
+/* =========================================
+   FILE INPUT
+========================================= */
+
+.file-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.image-note {
+    margin: 5px 0 0 0;
+    font-size: 11px;
+    color: #888;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.cancel-btn {
+    padding: 9px 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: white;
+    color: #555;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+    .cancel-btn:hover {
+        background-color: #f5f5f5;
+    }
+
+.add-product-btn {
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    background-color: #f52d78;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+    .add-product-btn:hover {
+        background-color: #d91f66;
+    }
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width: 700px) {
+
+    .add-product-page {
+        padding: 20px;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .product-form-card {
+        padding: 20px;
+    }
+
+    .form-buttons {
+        justify-content: flex-start;
+    }
+}

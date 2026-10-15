@@ -41,9 +41,9 @@
                     be an inspiration.
                 </p>
 
-                <button type="button">
-                    Keep Learning
-                </button>
+<a href="User_Courses.aspx" class="keep-learning-btn">
+    Keep Learning
+</a>
 
             </div>
 
@@ -137,9 +137,9 @@
                             Step by step
                         </p>
 
-                        <button type="button">
-                            Continue
-                        </button>
+<a href="User_Courses.aspx" class="continue-btn">
+    Continue
+</a>
 
                     </div>
 

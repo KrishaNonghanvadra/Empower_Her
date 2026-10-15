@@ -85,6 +85,10 @@
     <Content Include="Admin_HTML\Admin_products_page.aspx" />
     <Content Include="Admin_HTML\Admin_testimonials_page.aspx" />
     <Content Include="Admin_HTML\Admin_users_page.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="Guest_CSS\about_us_css.css" />
     <Content Include="Guest_CSS\contact_us_css.css" />
     <Content Include="Guest_CSS\features_css.css" />
@@ -393,6 +397,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin_Images\" />
+    <Folder Include="SQL_Scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

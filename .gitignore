@@ -10,3 +10,7 @@ obj/
 
 # NuGet
 packages/
+
+# SQL Server database files
+App_Data/*.mdf
+App_Data/*.ldf

@@ -62,7 +62,7 @@
                 <!-- Notification -->
 
                 <div class="notification">
-                    <i class="fa-regular fa-bell"></i>
+ <%--                   <i class="fa-regular fa-bell"></i>--%>
                 </div>
 
 
@@ -156,7 +156,7 @@
                 
                 <!-- LOgout -->
 
-                <a href="<%=ResolveUrl("Login.aspx") %>" class="sidebar-item">
+                <a href="../Guest_HTML/Login.aspx" class="sidebar-item">
                      <i class="fa-solid fa-right-from-bracket"></i>
                      <span>Logout</span>
                 </a>

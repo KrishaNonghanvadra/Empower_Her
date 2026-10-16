@@ -13,14 +13,13 @@
     ContentPlaceHolderID="head"
     runat="server">
 
-    <link href="<%= ResolveUrl("~/User_Css/User_Change_Password.css") %>"
+    <link href="<%= ResolveUrl("~/User_CSS/User_Change_Password.css") %>"
         rel="stylesheet" />
 
 </asp:Content>
 
 
-<asp:Content
-    ID="Content2"
+<asp:Content ID="Content2"
     ContentPlaceHolderID="ContentPlaceHolder1"
     runat="server">
 
@@ -41,7 +40,7 @@
 
         <!-- MAIN CONTENT -->
 
-        <div class="change-password-content">
+        <div class="password-section">
 
             <!-- PASSWORD FORM -->
 
@@ -77,7 +76,7 @@
 
                 <!-- NEW PASSWORD -->
 
-                <div class="password-group">
+                <div class="form-group">
 
                     <label for="<%= Np.ClientID %>">
                         New Password
@@ -116,7 +115,7 @@
 
                 <!-- CONFIRM NEW PASSWORD -->
 
-                <div class="password-group">
+                <div class="form-group">
 
                     <label for="<%= Cnp.ClientID %>">
                         Confirm New Password
@@ -181,8 +180,7 @@
 
             <div class="password-image">
 
-                <img
-                    src="../User_Images/lock.png"
+                <img src="../User_Images/lock.png"
                     alt="Change Password" />
 
             </div>

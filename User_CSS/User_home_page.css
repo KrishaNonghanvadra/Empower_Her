@@ -68,7 +68,7 @@
     .welcome-text .keep-learning-btn {
         display: inline-block;
         border: none;
-        background: linear-gradient(90deg, #8b5cf6, #ec4899, #22c55e);
+        background: #d91f66;
         color: white;
         padding: 7px 18px;
         border-radius: 7px;

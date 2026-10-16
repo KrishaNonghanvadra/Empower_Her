@@ -1,10 +1,10 @@
-﻿<%@ Page Title="Government Schemes"
+﻿
+<%@ Page Title="Government Schemes"
     Language="C#"
     MasterPageFile="~/Guest_HTML/Guest_Master_Page.Master"
     AutoEventWireup="true"
     CodeBehind="Government_Schemes.aspx.cs"
     Inherits="Empower_Her_1.Government_Schemes" %>
-
 
 <asp:Content ID="Content1"
     ContentPlaceHolderID="head"
@@ -15,14 +15,13 @@
 
 </asp:Content>
 
-
 <asp:Content ID="Content2"
     ContentPlaceHolderID="ContentPlaceHolder1"
     runat="server">
 
     <section class="schemes-page">
 
-        <!-- Page Heading -->
+        <!-- PAGE HEADING -->
 
         <div class="schemes-heading">
 
@@ -37,7 +36,7 @@
         </div>
 
 
-        <!-- Search and Category -->
+        <!-- SEARCH AND CATEGORY FILTER -->
 
         <div class="scheme-filter">
 
@@ -54,25 +53,28 @@
 
             </div>
 
-
             <asp:DropDownList
                 ID="ddlCategory"
                 runat="server"
                 CssClass="category-dropdown">
 
-                <asp:ListItem Text="All Categories"
+                <asp:ListItem
+                    Text="All Categories"
                     Value="All">
                 </asp:ListItem>
 
-                <asp:ListItem Text="Loan Schemes"
+                <asp:ListItem
+                    Text="Loan Schemes"
                     Value="Loan">
                 </asp:ListItem>
 
-                <asp:ListItem Text="Skill Development"
+                <asp:ListItem
+                    Text="Skill Development"
                     Value="Skill">
                 </asp:ListItem>
 
-                <asp:ListItem Text="Women Empowerment"
+                <asp:ListItem
+                    Text="Women Empowerment"
                     Value="Women">
                 </asp:ListItem>
 
@@ -81,14 +83,24 @@
         </div>
 
 
-        <!-- Government Scheme Cards -->
+        <!-- NO RESULTS MESSAGE -->
 
-        <div class="schemes-grid">
+        <div id="noSchemesMessage"
+            style="display:none; text-align:center; padding:25px;">
+
+            No schemes found. Try another search or category.
+
+        </div>
 
 
-            <!-- PM Mudra Yojana -->
+        <!-- GOVERNMENT SCHEME CARDS -->
 
-            <div class="scheme-card">
+        <div class="schemes-grid" id="schemesGrid">
+
+
+            <!-- PM MUDRA YOJANA -->
+
+            <div class="scheme-card" data-category="Loan">
 
                 <div class="scheme-icon mudra-icon">
                     ₹
@@ -109,9 +121,9 @@
             </div>
 
 
-            <!-- Skill India Mission -->
+            <!-- SKILL INDIA MISSION -->
 
-            <div class="scheme-card">
+            <div class="scheme-card" data-category="Skill">
 
                 <div class="scheme-icon skill-icon">
                     ▣
@@ -133,9 +145,9 @@
             </div>
 
 
-            <!-- Stand-Up India -->
+            <!-- STAND-UP INDIA -->
 
-            <div class="scheme-card">
+            <div class="scheme-card" data-category="Loan">
 
                 <div class="scheme-icon standup-icon">
                     ♧
@@ -156,9 +168,9 @@
             </div>
 
 
-            <!-- Mahila E-Haat -->
+            <!-- MAHILA E-HAAT -->
 
-            <div class="scheme-card">
+            <div class="scheme-card" data-category="Women">
 
                 <div class="scheme-icon ehaat-icon">
                     🛒
@@ -179,9 +191,9 @@
             </div>
 
 
-            <!-- Beti Bachao Beti Padhao -->
+            <!-- BETI BACHAO BETI PADHAO -->
 
-            <div class="scheme-card">
+            <div class="scheme-card" data-category="Women">
 
                 <div class="scheme-icon beti-icon">
                     👧
@@ -202,9 +214,9 @@
             </div>
 
 
-            <!-- National Rural Livelihood Mission -->
+            <!-- NATIONAL RURAL LIVELIHOOD MISSION -->
 
-            <div class="scheme-card">
+            <div class="scheme-card" data-category="Women">
 
                 <div class="scheme-icon nrlm-icon">
                     ♟
@@ -228,5 +240,84 @@
         </div>
 
     </section>
+
+
+    <!-- SEARCH AND CATEGORY FILTER FUNCTIONALITY -->
+
+    <script>
+(function() {
+
+    var searchBox = document.getElementById(
+                '<%= txtSearch.ClientID %>'
+            );
+
+            var categoryDropdown = document.getElementById(
+                '<%= ddlCategory.ClientID %>'
+            );
+
+            var schemeCards = document.querySelectorAll(
+                '#schemesGrid .scheme-card'
+            );
+
+            var noResults = document.getElementById(
+                'noSchemesMessage'
+            );
+
+            function filterSchemes() {
+
+                var searchText = searchBox.value
+                    .toLowerCase()
+                    .trim();
+
+                var selectedCategory = categoryDropdown.value;
+
+                var visibleCount = 0;
+
+                schemeCards.forEach(function (card) {
+
+                    var cardText = card.textContent.toLowerCase();
+
+                    var cardCategory = card.getAttribute(
+                        'data-category'
+                    );
+
+                    var matchesSearch =
+                        cardText.indexOf(searchText) !== -1;
+
+                    var matchesCategory =
+                        selectedCategory === 'All' ||
+                        cardCategory === selectedCategory;
+
+                    if (matchesSearch && matchesCategory) {
+
+                        card.style.display = '';
+
+                        visibleCount++;
+
+                    } else {
+
+                        card.style.display = 'none';
+
+                    }
+
+                });
+
+                noResults.style.display =
+                    visibleCount === 0 ? 'block' : 'none';
+
+            }
+
+            searchBox.addEventListener(
+                'input',
+                filterSchemes
+            );
+
+            categoryDropdown.addEventListener(
+                'change',
+                filterSchemes
+            );
+
+        })();
+    </script>
 
 </asp:Content>

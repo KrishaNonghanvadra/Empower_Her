@@ -1,215 +1,273 @@
-﻿/* =========================================
-   USERS PAGE
-   ========================================= */
-
+﻿
 .users-container {
-    padding: 20px 30px;
-    font-family: Arial, sans-serif;
+    width: 100%;
     box-sizing: border-box;
+    padding: 18px 22px;
+    color: #111;
+    font-family: Arial, sans-serif;
 }
-
-
-/* =========================================
-   PAGE HEADER
-   ========================================= */
 
 .users-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    margin-bottom: 26px;
+}
+
+    .users-header h2 {
+        margin: 0 0 6px;
+        font-size: 30px;
+    }
+
+    .users-header p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+.add-btn,
+.save-btn {
+    background: #ed0d5b;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 15px 23px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .add-btn:hover,
+    .save-btn:hover {
+        background: #c90b4d;
+    }
+
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 18px;
 }
 
-.users-title h2 {
-    margin: 0;
-    font-size: 25px;
-    color: #111;
+.search-box {
+    width: min(530px, 75%);
+    box-sizing: border-box;
+    padding: 12px 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 7px;
+    font-size: 14px;
 }
 
-.users-title p {
-    margin: 4px 0 0;
-    font-size: 13px;
-    color: #111;
-    font-weight: 600;
-}
-
-
-/* =========================================
-   ADD USER BUTTON
-   ========================================= */
-
-.add-user-btn {
-    background-color: #e91667;
-    color: white;
-    border: none;
+.clear-btn {
     padding: 11px 16px;
+    background: #eeeeee;
+    border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 13px;
-    font-weight: 500;
 }
 
-    .add-user-btn:hover {
-        background-color: #d3135d;
-    }
-
-
-/* =========================================
-   SEARCH BOX
-   ========================================= */
-
-.user-search {
-    width: 365px;
-    height: 30px;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    padding: 0 10px;
-    font-size: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    outline: none;
-}
-
-    .user-search:focus {
-        border-color: #e91667;
-    }
-
-
-/* =========================================
-   TABLE WRAPPER
-   ========================================= */
-
-.user-table-wrapper {
+.table-wrapper {
     width: 100%;
-    background-color: #d9d9d9;
-    padding: 10px;
-    box-sizing: border-box;
     overflow-x: auto;
+    box-sizing: border-box;
+    background: #d9d9d9;
+    padding: 12px;
 }
 
-
-/* =========================================
-   USER TABLE
-   ========================================= */
-
-.user-table {
+.users-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white;
-    font-size: 10px;
-    color: #111;
+    background: white;
 }
 
-
-    /* =========================================
-   TABLE HEADER
-   ========================================= */
-
-    .user-table th {
-        background-color: #ffffff;
+    .users-table th {
+        background: white;
         color: #111;
-        font-size: 11px;
-        font-weight: bold;
         text-align: left;
-        padding: 11px 10px;
-        border-bottom: 1px solid #eeeeee;
+        padding: 18px 14px;
+        font-size: 15px;
+        white-space: nowrap;
     }
 
-
-    /* =========================================
-   TABLE DATA
-   ========================================= */
-
-    .user-table td {
-        background-color: #ffffff;
-        color: #222;
-        padding: 12px 10px;
-        border-bottom: 1px solid #eeeeee;
-        vertical-align: middle;
+    .users-table td {
+        padding: 18px 14px;
+        border-top: 1px solid #eeeeee;
+        background: white;
+        font-size: 14px;
     }
 
-
-    /* =========================================
-   TABLE ROW
-   ========================================= */
-
-    .user-table tr {
-        height: 38px;
+    .users-table tr:hover td {
+        background: #fff9fb;
     }
-
-        .user-table tr:hover td {
-            background-color: #fafafa;
-        }
-
-
-/* =========================================
-   STATUS
-   ========================================= */
 
 .status-active {
-    color: #29905e;
+    color: #269568;
     font-weight: bold;
-    font-size: 10px;
 }
 
+.status-inactive {
+    color: #d64545;
+    font-weight: bold;
+}
 
-/* =========================================
-   ACTION BUTTONS
-   ========================================= */
-
-.user-action {
+.action-btn {
+    display: inline-block;
+    padding: 5px 8px;
     text-decoration: none;
-    border: none;
-    background: transparent;
+    font-size: 17px;
     cursor: pointer;
-    font-size: 13px;
-    margin-right: 12px;
 }
 
-
-/* View */
-
-.view-user {
+.view-btn {
     color: #111;
 }
 
-    .view-user:hover {
-        color: #555;
-    }
-
-
-/* Delete */
-
-.delete-user {
-    color: #f0445e;
+.edit-btn {
+    color: #2866c5;
 }
 
-    .delete-user:hover {
-        color: #d7193f;
+.delete-btn {
+    color: #f04a5c;
+}
+
+.action-btn:hover {
+    opacity: 0.65;
+}
+
+.message-label {
+    display: block;
+    margin-top: 12px;
+    color: #237a50;
+    font-weight: bold;
+}
+
+/* Popup background */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    overflow-y: auto;
+}
+
+/* Popup form */
+.modal-card {
+    width: 100%;
+    max-width: 460px;
+    box-sizing: border-box;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+    .modal-card h3 {
+        margin: 0 0 22px;
+        font-size: 24px;
     }
 
+.form-field {
+    margin-bottom: 15px;
+}
 
-/* =========================================
-   RESPONSIVE
-   ========================================= */
+    .form-field label {
+        display: block;
+        margin-bottom: 7px;
+        font-weight: bold;
+        font-size: 14px;
+    }
 
-@media (max-width: 800px) {
+.form-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+}
 
+    .form-input:focus,
+    .search-box:focus {
+        outline: none;
+        border-color: #ed0d5b;
+        box-shadow: 0 0 0 2px rgba(237, 13, 91, 0.12);
+    }
+
+.validation-error {
+    display: block;
+    color: #d00035;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 11px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cancel-btn {
+    background: #e7e7e7;
+    color: #222;
+}
+
+    .cancel-btn:hover {
+        background: #d4d4d4;
+    }
+
+.view-card p {
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+    margin: 12px 0;
+}
+
+@media (max-width: 700px) {
     .users-container {
-        padding: 15px;
+        padding: 12px;
     }
 
     .users-header {
-        flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
     }
 
-    .user-search {
-        width: 100%;
+        .users-header h2 {
+            font-size: 25px;
+        }
+
+    .add-btn {
+        padding: 12px;
+        font-size: 14px;
+        white-space: nowrap;
     }
 
-    .user-table-wrapper {
-        overflow-x: auto;
+    .search-box {
+        flex: 1;
+        width: auto;
+        min-width: 0;
+    }
+
+    .users-table th,
+    .users-table td {
+        padding: 12px 10px;
+    }
+
+    .modal-card {
+        padding: 20px;
     }
 }
